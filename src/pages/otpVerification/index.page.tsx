@@ -34,7 +34,9 @@ const VerifyOtp = () => {
         <Heading text={t('mobile_verification')} onClick={handleBack} />
       </div>
       <div className="inner">
-        <BarIcon />
+        <div className="barIcon">
+          <BarIcon />
+        </div>
         <div className="crossIcon" onClick={handleBack}>
           <CrossIcon />
         </div>

@@ -39,6 +39,7 @@ export const IdentifyText = styled.span`
 `;
 
 export const Row = styled.div`
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
