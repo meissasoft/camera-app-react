@@ -70,7 +70,7 @@ const Verification = () => {
 
   const startVideoRecording = () => {
     setIsDone(false);
-    mediaRecorder.current.start(1000);
+    mediaRecorder?.current?.start(1000);
     setTimeout(() => {
       setinstruction(t('instruction_1'));
       setDescriptoin(t('look_over_your_right_shoulder_and_back'));
@@ -91,7 +91,7 @@ const Verification = () => {
   };
 
   const stop = () => {
-    mediaRecorder.current.stop();
+    mediaRecorder?.current?.stop();
     setIsDone(true);
     dispatch(setRecordedVideo(URL.createObjectURL(new Blob(blobsRecorded, { type: 'video/webm' }))));
     router.push('/video_screen');
