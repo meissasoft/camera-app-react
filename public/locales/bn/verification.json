@@ -1,11 +1,11 @@
 {
-  "header": "পরিচয় যাচাইকরণ",
-  "heading": "তোমার পরিচিতি নিশ্চিত কর",
-  "headingParagraph": "এটি 2 মিনিটেরও কম সময় নেবে",
+  "identity_verification": "পরিচয় যাচাইকরণ",
+  "verify_your_identity": "তোমার পরিচিতি নিশ্চিত কর",
+  "it_will_take_less_than_2_minutes": "এটি 2 মিনিটেরও কম সময় নেবে",
   "step1": "ধাপ 1",
-  "heading2": "পরিচয় নথি যাচাইকরণ",
-  "heading2para": "একটি পরিচয় নথির একটি ছবি নিন এবং যাচাইয়ের জন্য এটি আপলোড করুন",
+  "identity_document_verification": "পরিচয় নথি যাচাইকরণ",
+  "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "একটি পরিচয় নথির একটি ছবি নিন এবং যাচাইয়ের জন্য এটি আপলোড করুন",
   "step2": "ধাপ ২",
-  "heading3": "একটি সেলফি ভিডিও রেকর্ড করুন",
-  "heading3para": "কথা বলুন এবং আপনার মাথা সরান, 25 সেকেন্ডের মধ্যে কাজ শেষ করুন।"
+  "record_a_selfie_video": "একটি সেলফি ভিডিও রেকর্ড করুন",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "কথা বলুন এবং আপনার মাথা সরান, 25 সেকেন্ডের মধ্যে কাজ শেষ করুন।"
 }

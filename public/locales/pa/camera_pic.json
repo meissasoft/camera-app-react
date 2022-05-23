@@ -1,8 +1,8 @@
 {
-  "headingFront": "ਕਾਰਡ ਦੇ ਸਾਹਮਣੇ",
-  "headingBack": "ਕਾਰਡ ਦਾ ਪਿਛਲਾ ਹਿੱਸਾ",
-  "headingParaFront": "ਕਾਰਡ ਦੇ ਅਗਲੇ ਹਿੱਸੇ ਨੂੰ ਫਰੇਮ ਵਿੱਚ ਰੱਖੋ",
-  "headingParaBack": "ਕਾਰਡ ਦੇ ਪਿਛਲੇ ਹਿੱਸੇ ਨੂੰ ਫਰੇਮ ਵਿੱਚ ਰੱਖੋ",
+  "front_of_the_card": "ਕਾਰਡ ਦੇ ਸਾਹਮਣੇ",
+  "back_of_the_card": "ਕਾਰਡ ਦਾ ਪਿਛਲਾ ਹਿੱਸਾ",
+  "position_the_front_of_the_card_in_the_frame": "ਕਾਰਡ ਦੇ ਅਗਲੇ ਹਿੱਸੇ ਨੂੰ ਫਰੇਮ ਵਿੱਚ ਰੱਖੋ",
+  "position_the_back_of_the_card_in_the_frame": "ਕਾਰਡ ਦੇ ਪਿਛਲੇ ਹਿੱਸੇ ਨੂੰ ਫਰੇਮ ਵਿੱਚ ਰੱਖੋ",
   "cancel": "ਰੱਦ ਕਰੋ",
   "retake": "ਦੁਬਾਰਾ ਲਓ"
 }

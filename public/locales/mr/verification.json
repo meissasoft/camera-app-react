@@ -1,11 +1,11 @@
 {
-  "header": "ओळख पडताळणी",
-  "heading": "तुमची ओळख सत्यापित करा",
-  "headingParagraph": "यास 2 मिनिटांपेक्षा कमी वेळ लागेल",
+  "identity_verification": "ओळख पडताळणी",
+  "verify_your_identity": "तुमची ओळख सत्यापित करा",
+  "it_will_take_less_than_2_minutes": "यास 2 मिनिटांपेक्षा कमी वेळ लागेल",
   "step1": "पायरी 1",
-  "heading2": "ओळख दस्तऐवज सत्यापन",
-  "heading2para": "ओळख दस्तऐवजाचे छायाचित्र घ्या आणि ते पडताळणीसाठी अपलोड करा",
+  "identity_document_verification": "ओळख दस्तऐवज सत्यापन",
+  "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "ओळख दस्तऐवजाचे छायाचित्र घ्या आणि ते पडताळणीसाठी अपलोड करा",
   "step2": "पायरी 2",
-  "heading3": "सेल्फी व्हिडिओ रेकॉर्ड करा",
-  "heading3para": "सेल्फी व्हिडिओ रेकॉर्ड करा."
+  "record_a_selfie_video": "सेल्फी व्हिडिओ रेकॉर्ड करा",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "सेल्फी व्हिडिओ रेकॉर्ड करा."
 }

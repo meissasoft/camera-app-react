@@ -1,13 +1,13 @@
 {
-  "header": "ओळख दस्तऐवज पडताळणी",
-  "heading": "ओळख दस्तऐवज पडताळणी",
-  "headingParagraph": "पुढील चरणांमध्ये तुम्ही त्याचे चित्र घ्याल",
-  "adhaarcard": "आधार कार्ड",
+  "identity_document_verification": "ओळख दस्तऐवज पडताळणी",
+  "select_a_documemt": "ओळख दस्तऐवज पडताळणी",
+  "you_will_take_a_picture_of_it_in_next_steps": "पुढील चरणांमध्ये तुम्ही त्याचे चित्र घ्याल",
+  "adhaar_card": "आधार कार्ड",
   "passport": "पासपोर्ट",
   "licence": "ड्रायव्हर लिन्सन्स",
-  "voterid": "ভোটার আইডি",
-  "modalheading": "\"व्हिडिओ केवायसी\" कॅमेरा ऍक्सेस करू इच्छितो",
-  "modalparagraph": "दस्तऐवज आणि फेशियल कॅप्चरसाठी आवश्यक आहे",
-  "modaldontAllow": "परवानगी देऊ नका",
-  "modalok": "ओह"
+  "voter_id": "ভোটার আইডি",
+  "video_kyc_would_like_to_access_the_camera": "\"व्हिडिओ केवायसी\" कॅमेरा ऍक्सेस करू इच्छितो",
+  "required_for_document_and_facial_capture": "दस्तऐवज आणि फेशियल कॅप्चरसाठी आवश्यक आहे",
+  "don't_allow": "परवानगी देऊ नका",
+  "ok": "ओह"
 }

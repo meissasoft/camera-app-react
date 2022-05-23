@@ -1,11 +1,11 @@
 {
-  "header": "ઓળખ ચકાસણી",
-  "heading": "તમારી ઓળખ ચકાસો",
-  "headingParagraph": "તે 2 મિનિટથી ઓછો સમય લેશે",
+  "identity_verification": "ઓળખ ચકાસણી",
+  "verify_your_identity": "તમારી ઓળખ ચકાસો",
+  "it_will_take_less_than_2_minutes": "તે 2 મિનિટથી ઓછો સમય લેશે",
   "step1": "પગલું 1",
-  "heading2": "ઓળખ દસ્તાવેજની ચકાસણી",
-  "heading2para": "ઓળખ દસ્તાવેજની તસવીર લો અને તેને વેરિફિકેશન માટે અપલોડ કરો",
+  "identity_document_verification": "ઓળખ દસ્તાવેજની ચકાસણી",
+  "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "ઓળખ દસ્તાવેજની તસવીર લો અને તેને વેરિફિકેશન માટે અપલોડ કરો",
   "step2": "પગલું 2",
-  "heading3": "સેલ્ફી વીડિયો રેકોર્ડ કરો",
-  "heading3para": "લોડ બોલો અને તમારું માથું ખસેડો, 25 સેકન્ડમાં ક્રિયાઓ પૂર્ણ કરો."
+  "record_a_selfie_video": "સેલ્ફી વીડિયો રેકોર્ડ કરો",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "લોડ બોલો અને તમારું માથું ખસેડો, 25 સેકન્ડમાં ક્રિયાઓ પૂર્ણ કરો."
 }

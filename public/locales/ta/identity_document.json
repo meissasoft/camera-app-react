@@ -1,13 +1,13 @@
 {
-  "header": "அடையாள ஆவண சரிபார்ப்பு",
-  "heading": "ஒரு ஆவணத்தைத் தேர்ந்தெடுக்கவும்",
-  "headingParagraph": "அடுத்த படிகளில் நீங்கள் அதைப் படம் எடுப்பீர்கள்",
-  "adhaarcard": "ஆதார் அட்டை",
+  "identity_document_verification": "அடையாள ஆவண சரிபார்ப்பு",
+  "select_a_documemt": "ஒரு ஆவணத்தைத் தேர்ந்தெடுக்கவும்",
+  "you_will_take_a_picture_of_it_in_next_steps": "அடுத்த படிகளில் நீங்கள் அதைப் படம் எடுப்பீர்கள்",
+  "adhaar_card": "ஆதார் அட்டை",
   "passport": "கடவுச்சீட்டு",
   "licence": "ஓட்டுனர் உரிமம்",
-  "voterid": "வாக்காளர் அடையாள அட்டை",
-  "modalheading": "\"வீடியோ KYC\" கேமராவை அணுக விரும்புகிறது",
-  "modalparagraph": "ஆவணம் மற்றும் முகப் பிடிப்புக்குத் தேவை",
-  "modaldontAllow": "அனுமதிக்காதே",
-  "modalok": "ஓ"
+  "voter_id": "வாக்காளர் அடையாள அட்டை",
+  "video_kyc_would_like_to_access_the_camera": "\"வீடியோ KYC\" கேமராவை அணுக விரும்புகிறது",
+  "required_for_document_and_facial_capture": "ஆவணம் மற்றும் முகப் பிடிப்புக்குத் தேவை",
+  "don't_allow": "அனுமதிக்காதே",
+  "ok": "ஓ"
 }

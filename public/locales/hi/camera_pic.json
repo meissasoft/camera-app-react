@@ -1,8 +1,9 @@
 {
-  "headingFront": "कार्ड के सामने",
-  "headingBack": "कार्ड के पीछे",
-  "headingParaFront": "कार्ड के सामने वाले हिस्से को फ्रेम में रखें",
-  "headingParaBack": "कार्ड के पिछले हिस्से को फ्रेम में रखें",
+  "front_of_the_card": "कार्ड के सामने",
+  "back_of_the_card": "कार्ड के पीछे",
+  "position_the_front_of_the_card_in_the_frame": "कार्ड के सामने वाले हिस्से को फ्रेम में रखें",
+  "position_the_back_of_the_card_in_the_frame": "कार्ड के पिछले हिस्से को फ्रेम में रखें",
   "cancel": "रद्द करें",
   "retake": "पुन: ले"
 }
+

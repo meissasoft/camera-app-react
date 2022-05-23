@@ -1,8 +1,8 @@
 {
-  "heading": "ਆਧਾਰ ਕਾਰਡ",
-  "frontSide": "ਆਧਾਰ ਕਾਰਡ ਫਰੰਟ ਸਾਈਡ",
-  "backSide": "ਆਧਾਰ ਕਾਰਡ ਦਾ ਪਿਛਲਾ ਪਾਸਾ",
+  "aadhaar_card": "ਆਧਾਰ ਕਾਰਡ",
+  "aadhaar_card_front_side": "ਆਧਾਰ ਕਾਰਡ ਫਰੰਟ ਸਾਈਡ",
+  "aadhaar_card_back_side": "ਆਧਾਰ ਕਾਰਡ ਦਾ ਪਿਛਲਾ ਪਾਸਾ",
   "retake": "ਦੁਬਾਰਾ ਲਓ",
-  "paragraph": "ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਕਾਰਡ ਦੇ ਵੇਰਵੇ ਬਿਨਾਂ ਕਿਸੇ ਧੁੰਦਲੇ ਜਾਂ ਚਮਕ ਦੇ ਪੜ੍ਹਨ ਲਈ ਸਾਫ਼ ਹਨ।",
+  "make_sure_that_your_card_details_are_clear_to_read_with_no_blur_or_glare": "ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਕਾਰਡ ਦੇ ਵੇਰਵੇ ਬਿਨਾਂ ਕਿਸੇ ਧੁੰਦਲੇ ਜਾਂ ਚਮਕ ਦੇ ਪੜ੍ਹਨ ਲਈ ਸਾਫ਼ ਹਨ।",
   "continue": "ਜਾਰੀ ਰੱਖੋ"
 }
