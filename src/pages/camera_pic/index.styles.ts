@@ -50,3 +50,7 @@ export const Video = styled.video`
     object-fit: cover;
   }
 `;
+export const DivFlex = styled.video`
+  display: flex;
+  justify-content: center;
+`;

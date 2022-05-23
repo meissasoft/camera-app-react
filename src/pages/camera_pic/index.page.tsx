@@ -17,6 +17,7 @@ import {
   VerificationStyled,
   VerificationTextStyled,
   Video,
+  DivFlex,
 } from './index.styles';
 
 /**
@@ -86,20 +87,18 @@ const Verification = () => {
   };
   const { t } = useTranslation('camera_pic');
   return (
-    <>
-      <DivMain>
-        <VerificationStyled>
-          <DivCameraBox>
-            <Video ref={videoRef}></Video>
-            <Canvas ref={photoRef}></Canvas>
-          </DivCameraBox>
-          <VerificationTextStyled>{isFront ? t('front_of_the_card') : t('back_of_the_card')}</VerificationTextStyled>
-          <VerificationSmallTextStyled>
-            {isFront
-              ? t('position_the_front_of_the_card_in_the_frame')
-              : t('position_the_back_of_the_card_in_the_frame')}
-          </VerificationSmallTextStyled>
-        </VerificationStyled>
+    <DivMain>
+      <VerificationStyled>
+        <DivCameraBox>
+          <Video ref={videoRef}></Video>
+          <Canvas ref={photoRef}></Canvas>
+        </DivCameraBox>
+        <VerificationTextStyled>{isFront ? t('front_of_the_card') : t('back_of_the_card')}</VerificationTextStyled>
+        <VerificationSmallTextStyled>
+          {isFront ? t('position_the_front_of_the_card_in_the_frame') : t('position_the_back_of_the_card_in_the_frame')}
+        </VerificationSmallTextStyled>
+      </VerificationStyled>
+      <DivFlex>
         <CameraBottomWithButton
           onClick={takePhoto}
           onCancel={handleCancel}
@@ -107,8 +106,8 @@ const Verification = () => {
           cancel={t('cancel')}
           retake={t('retake')}
         />
-      </DivMain>
-    </>
+      </DivFlex>
+    </DivMain>
   );
 };
 export const getStaticProps = async ({ locale }: { locale: string }) => ({

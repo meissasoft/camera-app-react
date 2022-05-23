@@ -38,10 +38,15 @@ export const DivMain = styled.div`
     opacity: 0.6;
   }
 
+  .barIcon{
+    cursor:pointer;
+  } 
+
   .crossIcon{
     position:absolute;
     right: 12px;
     top: 24px;
+    cursor: pointer;
   }
 
   .otpContainer {
@@ -62,7 +67,7 @@ export const DivMain = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.1);
     margin-right: 10px;
     text-align: center;
     outline: none;
@@ -78,9 +83,7 @@ export const DivMain = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    border-bottom: 2px solid #38568f;
- 
-    caret-color: linear-gradient(90.81deg, #38568f 10%, #38a1f7 75.3%);
+    border-bottom: 2.5px solid #38568f;
   }
 
   .text {

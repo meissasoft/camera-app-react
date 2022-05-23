@@ -13,7 +13,7 @@ import Screenshot from '@/assets/png/video1.png';
 
 import {
   DivGraterThenIconStyled,
-  DivHomeButton,
+  DivCenterContent,
   DivMain,
   DivRappingStyled,
   DivVideoStyled,
@@ -41,44 +41,40 @@ const VideoRecord = () => {
   const { t } = useTranslation('video_record');
 
   return (
-    <>
-      <DivMain>
-        <VidoRecordStyled>
-          <Header text={t('record_video')} onClick={onClickHeaderIcon} />
-          <TextStyled>{t('record_a_selfie_video')}</TextStyled>
-          <SmallTextStyled>{t('let’s_make_sure_nobody’s_improvising_you')}</SmallTextStyled>
-        </VidoRecordStyled>
-        <DivVideoStyled>
-          <Image className="object-cover" src={Screenshot} />
-        </DivVideoStyled>
+    <DivMain>
+      <Header text={t('record_video')} onClick={onClickHeaderIcon} />
+      <VidoRecordStyled>
+        <TextStyled>{t('record_a_selfie_video')}</TextStyled>
+        <SmallTextStyled>{t('let’s_make_sure_nobody’s_improvising_you')}</SmallTextStyled>
+      </VidoRecordStyled>
+      <DivVideoStyled>
+        <Image className="object-cover" src={Screenshot} />
+      </DivVideoStyled>
+      <DivCenterContent>
         <DivRappingStyled>
           <InstructionStyled>{t('instruction')}</InstructionStyled>
-          <div className="row">
-            <DivGraterThenIconStyled className="col-1">
+          <div className="d-flex">
+            <DivGraterThenIconStyled className="mx-3">
               <GreaterThenIcon />
             </DivGraterThenIconStyled>
-            <ParagraphInstructionPoint1Styled className="col-11">
+            <ParagraphInstructionPoint1Styled className="">
               {t('speak_out_load_and_move_your_head')}
             </ParagraphInstructionPoint1Styled>
           </div>
-          <div className="row">
-            <DivGraterThenIconStyled className="col-1">
+          <div className="d-flex">
+            <DivGraterThenIconStyled className="mx-3">
               <GreaterThenIcon />
             </DivGraterThenIconStyled>
-            <ParagraphInstructionpoint2Styled className="col-11">
+            <ParagraphInstructionpoint2Styled className="">
               {t('finish_actions_in_25_seconds')}
             </ParagraphInstructionpoint2Styled>
           </div>
         </DivRappingStyled>
-      </DivMain>
-      <div>
-        <DivHomeButton>
-          <Button isBottom onClick={onClickContinue} className="m-auto">
-            {t('continue')}
-          </Button>
-        </DivHomeButton>
-      </div>
-    </>
+      </DivCenterContent>
+      <Button isBottom onClick={onClickContinue} className="m-auto">
+        {t('continue')}
+      </Button>
+    </DivMain>
   );
 };
 

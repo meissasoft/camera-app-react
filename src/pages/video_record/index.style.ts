@@ -2,11 +2,11 @@ import styled from '@emotion/styled';
 
 export const DivMain = styled.div`
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-content: center;
+  // justify-content: center;
+  // align-items: center;
 `;
 export const VidoRecordStyled = styled.div`
   padding: 20px 0px;
@@ -40,7 +40,6 @@ export const InstructionStyled = styled.p`
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  margin-left: -10px;
   margin-top: -50px;
 `;
 export const ParagraphInstructionPoint1Styled = styled.p`
@@ -49,7 +48,7 @@ export const ParagraphInstructionPoint1Styled = styled.p`
   font-size: 18px;
   line-height: 24px;
   opacity: 0.6;
-  margin-left: 5px;
+  margin: 0px 0px;
 `;
 export const ParagraphInstructionpoint2Styled = styled.p`
   font-style: normal;
@@ -57,8 +56,7 @@ export const ParagraphInstructionpoint2Styled = styled.p`
   font-size: 18px;
   line-height: 24px;
   opacity: 0.6;
-  margin: 0px auto;
-  margin:left: 0px;
+  margin: 0px 0px;
 `;
 export const DivGraterThenIconStyled = styled.div`
   margin-right: -10px;
@@ -81,8 +79,14 @@ export const DivHomeButton = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const DivCenterContent = styled.div`
+  display: flex;
+  align-content: center;
+  justify-content: center;
+`;
+
 export const DivRappingStyled = styled.div`
-  max-width: 327px;
   height: 200px;
   display: flex;
   flex-direction: column;
