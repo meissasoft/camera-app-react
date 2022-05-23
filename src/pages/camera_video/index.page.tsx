@@ -67,7 +67,7 @@ const Verification = () => {
 
   const startVideoRecording = () => {
     setIsDone(false);
-    mediaRecorder.current.start(1000);
+    mediaRecorder?.current?.start(1000);
     setTimeout(() => {
       setinstruction('Instruction - 1');
       setDescriptoin('Look over your right shoulder and back');
@@ -88,7 +88,7 @@ const Verification = () => {
   };
 
   const stop = () => {
-    mediaRecorder.current.stop();
+    mediaRecorder?.current?.stop();
     setIsDone(true);
     dispatch(setRecordedVideo(URL.createObjectURL(new Blob(blobsRecorded, { type: 'video/webm' }))));
     router.push('/video_screen');

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button, Modal } from 'react-bootstrap';
 
-import { BodyModalStyled, IineModel, ParagraphModel, ParagraphTextModel } from './index.style';
+import { BodyModalStyled, IineModel, ParagraphModel, ParagraphTextModel, CenterModel } from './index.style';
 
 /**
  *
@@ -21,7 +21,7 @@ interface Props {
 
 function MyVerticallyCenteredModal({ show, onHide, onOk, heading, paragraph, dontAllow, ok }: Props) {
   return (
-    <Modal className="modal-cont" show={show} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <CenterModel show={show} size="lg" aria-labelledby="contained-modal-title-vcenter" centered style={{}}>
       <BodyModalStyled>
         <Modal.Body>
           <ParagraphModel>{heading}</ParagraphModel>
@@ -37,7 +37,7 @@ function MyVerticallyCenteredModal({ show, onHide, onOk, heading, paragraph, don
           </div>
         </Modal.Footer>
       </BodyModalStyled>
-    </Modal>
+    </CenterModel>
   );
 }
 

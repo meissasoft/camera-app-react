@@ -1,19 +1,6 @@
 import styled from '@emotion/styled';
+import { Modal } from 'react-bootstrap';
 
-export const DivModelButton = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-export const DivModelButton1 = styled.div`
-  flex-grow: 6;
-  justify-content: flex-start;
-`;
-
-export const DivModelButton2 = styled.div`
-  flex-grow: 6;
-`;
 export const ParagraphModel = styled.p`
   margin-bottom: 5px;
   font-style: normal;
@@ -30,13 +17,13 @@ export const ParagraphModel = styled.p`
   order: 0;
   flex-grow: 0;
 `;
-export const BodyModalStyled = styled.div`
+export const BodyModalStyled = styled.p`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
 
-  position: absolute;
+  position: fixed;
   width: 270px;
   height: 160px;
   left: calc(50% - 270px / 2 + 0.5px);
@@ -44,10 +31,10 @@ export const BodyModalStyled = styled.div`
   background: rgba(0, 0, 0, 0.8);
   background: rgba(242, 242, 242, 0.8);
   backdrop-filter: blur(54.3656px);
+  border-width: none;
 
   border-radius: 14px;
   .modal-body {
-    width: 100%;
   }
   .modal-footer {
     width: 100%;
@@ -65,9 +52,7 @@ export const BodyModalStyled = styled.div`
     border-color: rgb(219 219 219);
     color: #007aff;
   }
-  .modal-cont {
-    border: none;
-  }
+
   .col-5 {
     width: 50%;
     display: flex;
@@ -103,8 +88,8 @@ export const IineModel = styled.p`
 
   background: rgba(60, 60, 67, 0.29);
 `;
-export const CenterModel = styled.p`
-  left: calc(50% - 0.5px / 2 - 0.25px);
-  bottom: 0px;
-  background: rgba(60, 60, 67, 0.29);
+export const CenterModel = styled(Modal)`
+  & > div > div {
+    border: none !important;
+  }
 `;
