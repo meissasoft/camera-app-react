@@ -25,5 +25,5 @@ export const DivLayout = styled.div`
 export const DivHomeButton = styled.div`
   width: 100%;
   position: relative;
-  margin-top: 4%;
+  margin-top: 20%;
 `;

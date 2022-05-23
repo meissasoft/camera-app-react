@@ -6,10 +6,10 @@ import React from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+import Screenshot from '@/assets/png/video1.png';
 import { GreaterThenIcon } from '@/assets/svg/greaterthen-icon';
 import Button from '@/components/core/Button';
 import Header from '@/components/core/Header';
-import Screenshot from '@/assets/png/video1.png';
 
 import {
   DivGraterThenIconStyled,
@@ -23,6 +23,7 @@ import {
   SmallTextStyled,
   TextStyled,
   VidoRecordStyled,
+  FooterButtonStyle,
 } from './index.style';
 
 /**
@@ -71,9 +72,11 @@ const VideoRecord = () => {
           </div>
         </DivRappingStyled>
       </DivCenterContent>
-      <Button isBottom onClick={onClickContinue} className="m-auto">
-        {t('continue')}
-      </Button>
+      <FooterButtonStyle>
+        <Button isBottom onClick={onClickContinue} className="m-auto">
+          {t('continue')}
+        </Button>
+      </FooterButtonStyle>
     </DivMain>
   );
 };
