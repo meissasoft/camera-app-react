@@ -1,8 +1,8 @@
 {
-  "header": "মোবাইল ভেরিফিকেশন",
-  "heading": "যাচাইকরণ কোড",
-  "paragraph": "আমরা আপনার ফোন নম্বরে যে যাচাইকরণ কোডটি পাঠিয়েছি দয়া করে সেটি লিখুন",
-  "paragraph2": "আমি একটি কোড পাইনি",
+  "mobile_verification": "মোবাইল ভেরিফিকেশন",
+  "verification_code": "যাচাইকরণ কোড",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "আমরা আপনার ফোন নম্বরে যে যাচাইকরণ কোডটি পাঠিয়েছি দয়া করে সেটি লিখুন",
+  "i_did'nt_receive_a_code": "আমি একটি কোড পাইনি",
   "resend": "আবার পাঠান",
   "continue": "চালিয়ে যান"
 }
