@@ -1,8 +1,9 @@
 {
-  "header": "મોબાઇલ ચકાસણી",
-  "heading": "ચકાસણી કોડ",
-  "paragraph": "કૃપા કરીને અમે તમારા ફોન નંબર પર મોકલેલ ચકાસણી કોડ દાખલ કરો",
-  "paragraph2": "મને કોડ મળ્યો નથી",
+  "mobile_verification": "મોબાઇલ ચકાસણી",
+  "verification_code": "ચકાસણી કોડ",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "કૃપા કરીને અમે તમારા ફોન નંબર પર મોકલેલ ચકાસણી કોડ દાખલ કરો",
+  "i_did'nt_receive_a_code": "મને કોડ મળ્યો નથી",
   "resend": "ફરી મોકલો",
   "continue": "ચાલુ રાખો"
 }
+

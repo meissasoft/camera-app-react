@@ -1,13 +1,14 @@
 {
-  "header": "ઓળખ દસ્તાવેજ ચકાસણી",
-  "heading": "એક દસ્તાવેજ પસંદ કરો",
-  "headingParagraph": "તમે આગલા પગલાઓમાં તેનો એક ચિત્ર લેશો",
-  "adhaarcard": "આધાર કાર્ડ",
+  "identity_document_verification": "ઓળખ દસ્તાવેજ ચકાસણી",
+  "select_a_documemt": "એક દસ્તાવેજ પસંદ કરો",
+  "you_will_take_a_picture_of_it_in_next_steps": "તમે આગલા પગલાઓમાં તેનો એક ચિત્ર લેશો",
+  "adhaar_card": "આધાર કાર્ડ",
   "passport": "પાસપોર્ટ",
   "licence": "ડ્રાઈવર લાયન્સન્સ",
-  "voterid": "મતદાર આઈડી",
-  "modalheading": "\"વિડિયો કેવાયસી\" કેમેરાને ઍક્સેસ કરવા માંગે છે",
-  "modalparagraph": "દસ્તાવેજ અને ચહેરાના કેપ્ચર માટે જરૂરી છે",
-  "modaldontAllow": "મંજૂરી આપશો નહીં",
-  "modalok": "ઓહ"
+  "voter_id": "મતદાર આઈડી",
+  "video_kyc_would_like_to_access_the_camera": "\"વિડિયો કેવાયસી\" કેમેરાને ઍક્સેસ કરવા માંગે છે",
+  "required_for_document_and_facial_capture": "દસ્તાવેજ અને ચહેરાના કેપ્ચર માટે જરૂરી છે",
+  "don't_allow": "મંજૂરી આપશો નહીં",
+  "ok": "ઓહ"
 }
+
