@@ -5,14 +5,12 @@ export const Div = styled.div`
   bottom: 0px;
   width: 90%;
   color: white;
-  border: 1px solid red;
 `;
 
 export const DivContent = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 20px 0px;
-  border: 1px solid white;
 `;
 export const DivButton = styled.div`
   display: flex;
