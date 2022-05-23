@@ -1,8 +1,8 @@
 {
-  "headingFront": "కార్డ్ ముందు",
-  "headingBack": "కార్డు వెనుక",
-  "headingParaFront": "ఫ్రేమ్‌లో కార్డ్ ముందు భాగాన్ని ఉంచండి",
-  "headingParaBack": "ఫ్రేమ్‌లో కార్డ్ వెనుక భాగాన్ని ఉంచండి",
+  "front_of_the_card": "కార్డ్ ముందు",
+  "back_of_the_card": "కార్డు వెనుక",
+  "position_the_front_of_the_card_in_the_frame": "ఫ్రేమ్‌లో కార్డ్ ముందు భాగాన్ని ఉంచండి",
+  "position_the_back_of_the_card_in_the_frame": "ఫ్రేమ్‌లో కార్డ్ వెనుక భాగాన్ని ఉంచండి",
   "cancel": "రద్దు చేయండి",
   "retake": "మళ్లీ తీయండి"
 }

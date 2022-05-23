@@ -1,7 +1,7 @@
 {
-  "header": "ਸ਼ੁਰੂਆਤ ਕਰੋ",
+  "get_started": "ਸ਼ੁਰੂਆਤ ਕਰੋ",
   "login": "ਲਾਗਿਨ",
-  "scan": "QR ਸਕੈਨ ਕਰੋ",
+  "scan_qr": "QR ਸਕੈਨ ਕਰੋ",
   "or": "ਜਾਂ",
-  "placeholder": "ਮੋਬਾਈਲ ਨੰਬਰ ਦਰਜ ਕਰੋ"
+  "enter_mobile_number": "ਮੋਬਾਈਲ ਨੰਬਰ ਦਰਜ ਕਰੋ"
 }
