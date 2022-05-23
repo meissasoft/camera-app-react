@@ -1,11 +1,11 @@
 {
-  "header": "पहचान सत्यापन",
-  "heading": "अपनी पहचान सत्यापित करें",
-  "headingParagraph": "इसमें 2 मिनट से भी कम समय लगेगा",
+  "identity_verification": "पहचान सत्यापन",
+  "verify_your_identity": "अपनी पहचान सत्यापित करें",
+  "it_will_take_less_than_2_minutes": "इसमें 2 मिनट से भी कम समय लगेगा",
   "step1": "स्टेप 1",
-  "heading2": "पहचान दस्तावेज़ सत्यापन",
-  "heading2para": "एक पहचान दस्तावेज की तस्वीर लें और इसे सत्यापन के लिए अपलोड करें",
+  "identity_document_verification": "पहचान दस्तावेज़ सत्यापन",
+  "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "एक पहचान दस्तावेज की तस्वीर लें और इसे सत्यापन के लिए अपलोड करें",
   "step2": "चरण 2",
-  "heading3": "एक सेल्फी वीडियो रिकॉर्ड करें",
-  "heading3para": "बोलो बोलो और अपना सिर हिलाओ, 25 सेकंड में कार्य समाप्त करो।"
+  "record_a_selfie_video": "एक सेल्फी वीडियो रिकॉर्ड करें",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "बोलो बोलो और अपना सिर हिलाओ, 25 सेकंड में कार्य समाप्त करो।"
 }

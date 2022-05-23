@@ -1,8 +1,8 @@
 {
-  "header": "मोबाइल सत्यापन",
-  "heading": "पुष्टि संख्या",
-  "paragraph": "कृपया हमारे द्वारा आपके फ़ोन नंबर पर भेजा गया सत्यापन कोड दर्ज करें",
-  "paragraph2": "मुझे कोई कोड नहीं मिला",
+  "mobile_verification": "मोबाइल सत्यापन",
+  "verification_code": "पुष्टि संख्या",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "कृपया हमारे द्वारा आपके फ़ोन नंबर पर भेजा गया सत्यापन कोड दर्ज करें",
+  "i_did'nt_receive_a_code": "मुझे कोई कोड नहीं मिला",
   "resend": "पुन: भेजें",
   "continue": "जारी रखें"
 }

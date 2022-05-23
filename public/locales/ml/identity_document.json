@@ -1,13 +1,13 @@
 {
-  "header": "ഐഡന്റിറ്റി ഡോക്യുമെന്റ് പരിശോധന",
-  "heading": "ഒരു പ്രമാണം തിരഞ്ഞെടുക്കുക",
-  "headingParagraph": "അടുത്ത ഘട്ടങ്ങളിൽ നിങ്ങൾ അതിന്റെ ചിത്രമെടുക്കും",
-  "adhaarcard": "ആധാർ കാർഡ്",
+  "identity_document_verification": "ഐഡന്റിറ്റി ഡോക്യുമെന്റ് പരിശോധന",
+  "select_a_documemt": "ഒരു പ്രമാണം തിരഞ്ഞെടുക്കുക",
+  "you_will_take_a_picture_of_it_in_next_steps": "അടുത്ത ഘട്ടങ്ങളിൽ നിങ്ങൾ അതിന്റെ ചിത്രമെടുക്കും",
+  "adhaar_card": "ആധാർ കാർഡ്",
   "passport": "പാസ്പോർട്ട്",
   "licence": "ഡ്രൈവർ ലൈസൻസ്",
-  "voterid": "വോട്ടർ ഐഡി",
-  "modalheading": "\"വീഡിയോ KYC\" ക്യാമറ ആക്സസ് ചെയ്യാൻ ആഗ്രഹിക്കുന്നു",
-  "modalparagraph": "ഡോക്യുമെന്റിനും ഫേഷ്യൽ ക്യാപ്‌ചറിനും ആവശ്യമാണ്",
-  "modaldontAllow": "അനുവദിക്കരുത്",
-  "modalok": "ഓ"
+  "voter_id": "വോട്ടർ ഐഡി",
+  "video_kyc_would_like_to_access_the_camera": "\"വീഡിയോ KYC\" ക്യാമറ ആക്സസ് ചെയ്യാൻ ആഗ്രഹിക്കുന്നു",
+  "required_for_document_and_facial_capture": "ഡോക്യുമെന്റിനും ഫേഷ്യൽ ക്യാപ്‌ചറിനും ആവശ്യമാണ്",
+  "don't_allow": "അനുവദിക്കരുത്",
+  "ok": "ഓ"
 }

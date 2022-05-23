@@ -1,8 +1,8 @@
 {
-  "heading": "आधार कार्ड",
-  "frontSide": "आधार कार्ड समोर",
-  "backSide": "आधार कार्ड मागील बाजू",
+  "aadhaar_card": "आधार कार्ड",
+  "aadhaar_card_front_side": "आधार कार्ड समोर",
+  "aadhaar_card_back_side": "आधार कार्ड मागील बाजू",
   "retake": "पुन्हा घ्या",
-  "paragraph": "तुमचे कार्ड तपशील अस्पष्ट किंवा चकाकी न करता वाचण्यासाठी स्पष्ट आहेत याची खात्री करा.",
+  "make_sure_that_your_card_details_are_clear_to_read_with_no_blur_or_glare": "तुमचे कार्ड तपशील अस्पष्ट किंवा चकाकी न करता वाचण्यासाठी स्पष्ट आहेत याची खात्री करा.",
   "continue": "सुरू"
 }

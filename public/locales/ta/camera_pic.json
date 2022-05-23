@@ -1,8 +1,8 @@
 {
-  "headingFront": "அட்டையின் முன்புறம்",
-  "headingBack": "அட்டையின் பின்புறம்",
-  "headingParaFront": "அட்டையின் முன் பகுதியை சட்டகத்தில் வைக்கவும்",
-  "headingParaBack": "அட்டையின் பின்புறத்தை சட்டகத்தில் வைக்கவும்",
+  "front_of_the_card": "அட்டையின் முன்புறம்",
+  "back_of_the_card": "அட்டையின் பின்புறம்",
+  "position_the_front_of_the_card_in_the_frame": "அட்டையின் முன் பகுதியை சட்டகத்தில் வைக்கவும்",
+  "position_the_back_of_the_card_in_the_frame": "அட்டையின் பின்புறத்தை சட்டகத்தில் வைக்கவும்",
   "cancel": "ரத்து செய்",
   "retake": "மீண்டும் எடுக்கவும்"
 }

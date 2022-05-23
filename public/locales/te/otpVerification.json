@@ -1,8 +1,8 @@
 {
-  "header": "మొబైల్ ధృవీకరణ",
-  "heading": "ధృవీకరణ కోడ్",
-  "paragraph": "దయచేసి మేము మీ ఫోన్ నంబర్‌కు పంపిన ధృవీకరణ కోడ్‌ను నమోదు చేయండి",
-  "paragraph2": "నేను కోడ్‌ని అందుకోలేదు",
+  "mobile_verification": "మొబైల్ ధృవీకరణ",
+  "verification_code": "ధృవీకరణ కోడ్",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "దయచేసి మేము మీ ఫోన్ నంబర్‌కు పంపిన ధృవీకరణ కోడ్‌ను నమోదు చేయండి",
+  "i_did'nt_receive_a_code": "నేను కోడ్‌ని అందుకోలేదు",
   "resend": "మళ్లీ పంపండి",
   "continue": "కొనసాగించు"
 }

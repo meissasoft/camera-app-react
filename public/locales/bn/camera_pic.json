@@ -1,8 +1,8 @@
 {
-  "headingFront": "কার্ডের সামনে",
-  "headingBack": "কার্ডের পিছনে",
-  "headingParaFront": "ফ্রেমে কার্ডের সামনের অংশটি রাখুন",
-  "headingParaBack": "ফ্রেমে কার্ডের পিছনে অবস্থান করুন",
+  "front_of_the_card": "কার্ডের সামনে",
+  "back_of_the_card": "কার্ডের পিছনে",
+  "position_the_front_of_the_card_in_the_frame": "ফ্রেমে কার্ডের সামনের অংশটি রাখুন",
+  "position_the_back_of_the_card_in_the_frame": "ফ্রেমে কার্ডের পিছনে অবস্থান করুন",
   "cancel": "বাতিল",
   "retake": "পুনরায় গ্রহণ করুন"
 }

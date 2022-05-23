@@ -1,13 +1,13 @@
 {
-  "header": "ਪਛਾਣ ਦਸਤਾਵੇਜ਼ ਤਸਦੀਕ",
-  "heading": "ਇੱਕ ਦਸਤਾਵੇਜ਼ ਚੁਣੋ",
-  "headingParagraph": "ਤੁਸੀਂ ਅਗਲੇ ਕਦਮਾਂ ਵਿੱਚ ਇਸਦੀ ਇੱਕ ਤਸਵੀਰ ਲਓਗੇ",
-  "adhaarcard": "ਆਧਾਰ ਕਾਰਡ",
+  "identity_document_verification": "ਪਛਾਣ ਦਸਤਾਵੇਜ਼ ਤਸਦੀਕ",
+  "select_a_documemt": "ਇੱਕ ਦਸਤਾਵੇਜ਼ ਚੁਣੋ",
+  "you_will_take_a_picture_of_it_in_next_steps": "ਤੁਸੀਂ ਅਗਲੇ ਕਦਮਾਂ ਵਿੱਚ ਇਸਦੀ ਇੱਕ ਤਸਵੀਰ ਲਓਗੇ",
+  "adhaar_card": "ਆਧਾਰ ਕਾਰਡ",
   "passport": "ਪਾਸਪੋਰਟ",
   "licence": "ਡਰਾਈਵਰ ਲਾਇਨੈਂਸ",
-  "voterid": "ਵੋਟਰ ਆਈ.ਡੀ",
-  "modalheading": "“ਵੀਡੀਓ ਕੇਵਾਈਸੀ” ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨਾ ਚਾਹੇਗਾ",
-  "modalparagraph": "ਦਸਤਾਵੇਜ਼ ਅਤੇ ਚਿਹਰੇ ਦੇ ਕੈਪਚਰ ਲਈ ਲੋੜੀਂਦਾ ਹੈ",
-  "modaldontAllow": "ਇਜਾਜ਼ਤ ਨਾ ਦਿਓ",
-  "modalok": "ਓ"
+  "voter_id": "ਵੋਟਰ ਆਈ.ਡੀ",
+  "video_kyc_would_like_to_access_the_camera": "“ਵੀਡੀਓ ਕੇਵਾਈਸੀ” ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨਾ ਚਾਹੇਗਾ",
+  "required_for_document_and_facial_capture": "ਦਸਤਾਵੇਜ਼ ਅਤੇ ਚਿਹਰੇ ਦੇ ਕੈਪਚਰ ਲਈ ਲੋੜੀਂਦਾ ਹੈ",
+  "don't_allow": "ਇਜਾਜ਼ਤ ਨਾ ਦਿਓ",
+  "ok": "ਓ"
 }

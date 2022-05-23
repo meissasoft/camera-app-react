@@ -1,11 +1,11 @@
 {
-  "header": "ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ",
-  "heading": "ਆਪਣੀ ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
-  "headingParagraph": "ਇਸ ਵਿੱਚ 2 ਮਿੰਟ ਤੋਂ ਘੱਟ ਸਮਾਂ ਲੱਗੇਗਾ",
+  "identity_verification": "ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ",
+  "verify_your_identity": "ਆਪਣੀ ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+  "it_will_take_less_than_2_minutes": "ਇਸ ਵਿੱਚ 2 ਮਿੰਟ ਤੋਂ ਘੱਟ ਸਮਾਂ ਲੱਗੇਗਾ",
   "step1": "ਕਦਮ 1",
-  "heading2": "ਪਛਾਣ ਦਸਤਾਵੇਜ਼ ਤਸਦੀਕ",
-  "heading2para": "ਕਿਸੇ ਪਛਾਣ ਦਸਤਾਵੇਜ਼ ਦੀ ਤਸਵੀਰ ਲਓ ਅਤੇ ਇਸ ਨੂੰ ਪੁਸ਼ਟੀਕਰਨ ਲਈ ਅੱਪਲੋਡ ਕਰੋ",
+  "identity_document_verification": "ਪਛਾਣ ਦਸਤਾਵੇਜ਼ ਤਸਦੀਕ",
+  "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "ਕਿਸੇ ਪਛਾਣ ਦਸਤਾਵੇਜ਼ ਦੀ ਤਸਵੀਰ ਲਓ ਅਤੇ ਇਸ ਨੂੰ ਪੁਸ਼ਟੀਕਰਨ ਲਈ ਅੱਪਲੋਡ ਕਰੋ",
   "step2": "ਕਦਮ 2",
-  "heading3": "ਇੱਕ ਸੈਲਫੀ ਵੀਡੀਓ ਰਿਕਾਰਡ ਕਰੋ",
-  "heading3para": "ਲੋਡ ਨੂੰ ਬੋਲੋ ਅਤੇ ਆਪਣੇ ਸਿਰ ਨੂੰ ਹਿਲਾਓ, 25 ਸਕਿੰਟਾਂ ਵਿੱਚ ਕਾਰਵਾਈਆਂ ਨੂੰ ਪੂਰਾ ਕਰੋ।"
+  "record_a_selfie_video": "ਇੱਕ ਸੈਲਫੀ ਵੀਡੀਓ ਰਿਕਾਰਡ ਕਰੋ",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "ਲੋਡ ਨੂੰ ਬੋਲੋ ਅਤੇ ਆਪਣੇ ਸਿਰ ਨੂੰ ਹਿਲਾਓ, 25 ਸਕਿੰਟਾਂ ਵਿੱਚ ਕਾਰਵਾਈਆਂ ਨੂੰ ਪੂਰਾ ਕਰੋ।"
 }
