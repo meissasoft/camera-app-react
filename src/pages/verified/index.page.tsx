@@ -1,5 +1,8 @@
 import router from 'next/router';
 
+import lottie from 'lottie-web';
+
+import lottieFile from '@/assets/jpg/7893-confetti-cannons.json';
 import { VerifiiedIcon } from '@/assets/svg/verified-Icon';
 import Button from '@/components/core/Button';
 import Header from '@/components/core/Header';
@@ -20,10 +23,21 @@ import {
 const onClickHeaderIcon = () => {
   router.push('/video_screen');
 };
+
 const Verified = () => {
+  const lottieHandler = () => {
+    lottie?.loadAnimation({
+      container: document.querySelector('#lottieFile'),
+      animationData: lottieFile,
+      renderer: 'svg', // "canvas", "html"
+      loop: false, // boolean
+      autoplay: true, // boolean
+    });
+  };
+
   return (
     <>
-      <DivMain>
+      <DivMain id="lottieFile">
         <VerificationStyled>
           <Header text="Verification sucessful" onClick={onClickHeaderIcon} />
           <VerificationCardStyled>
@@ -36,7 +50,9 @@ const Verified = () => {
         </VerificationStyled>
       </DivMain>
       <DivBottom>
-        <Button className="m-auto">Finish</Button>
+        <Button className="m-auto" onClick={lottieHandler}>
+          Finish
+        </Button>
       </DivBottom>
     </>
   );

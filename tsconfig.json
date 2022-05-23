@@ -13,7 +13,6 @@
       "@/store/*": ["src/store/*"],
       "@/store": ["src/store"],
       "@/styles/*": ["src/styles/*"],
-      "@/theme/*": ["src/theme/*"],
       "@/utils/*": ["src/utils/*"],
       "@/validations/*": ["src/validations/*"],
       "@/validations": ["src/validations"],
