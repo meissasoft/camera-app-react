@@ -1,8 +1,8 @@
 {
-  "headingFront": "കാർഡിന്റെ മുൻഭാഗം",
-  "headingBack": "കാർഡിന്റെ പിൻഭാഗം",
-  "headingParaFront": "ഫ്രെയിമിൽ കാർഡിന്റെ മുൻഭാഗം സ്ഥാപിക്കുക",
-  "headingParaBack": "ഫ്രെയിമിൽ കാർഡിന്റെ പിൻഭാഗം സ്ഥാപിക്കുക",
+  "front_of_the_card": "കാർഡിന്റെ മുൻഭാഗം",
+  "back_of_the_card": "കാർഡിന്റെ പിൻഭാഗം",
+  "position_the_front_of_the_card_in_the_frame": "ഫ്രെയിമിൽ കാർഡിന്റെ മുൻഭാഗം സ്ഥാപിക്കുക",
+  "position_the_back_of_the_card_in_the_frame": "ഫ്രെയിമിൽ കാർഡിന്റെ പിൻഭാഗം സ്ഥാപിക്കുക",
   "cancel": "റദ്ദാക്കുക",
   "retake": "വീണ്ടും എടുക്കുക"
 }

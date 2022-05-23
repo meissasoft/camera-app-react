@@ -1,13 +1,14 @@
 {
-  "header": "পরিচয় নথি যাচাইকরণ",
-  "heading": "একটি নথি নির্বাচন করুন",
-  "headingParagraph": "আপনি পরবর্তী ধাপে এটির একটি ছবি তুলবেন",
-  "adhaarcard": "আধার কার্ড",
+  "identity_document_verification": "পরিচয় নথি যাচাইকরণ",
+  "select_a_documemt": "একটি নথি নির্বাচন করুন",
+  "you_will_take_a_picture_of_it_in_next_steps": "আপনি পরবর্তী ধাপে এটির একটি ছবি তুলবেন",
+  "adhaar_card": "আধার কার্ড",
   "passport": "পাসপোর্ট",
   "licence": "ড্রাইভার লিন্সেন্স",
-  "voterid": "ভোটার আইডি",
-  "modalheading": "\"ভিডিও KYC\" ক্যামেরা অ্যাক্সেস করতে চায়৷",
-  "modalparagraph": "নথি এবং মুখের ক্যাপচারের জন্য প্রয়োজনীয়",
-  "modaldontAllow": "অনুমতি দেবেন না",
-  "modalok": "ঠিক আছে"
+  "voter_id": "ভোটার আইডি",
+  "video_kyc_would_like_to_access_the_camera": "\"ভিডিও KYC\" ক্যামেরা অ্যাক্সেস করতে চায়৷",
+  "required_for_document_and_facial_capture": "নথি এবং মুখের ক্যাপচারের জন্য প্রয়োজনীয়",
+  "don't_allow": "অনুমতি দেবেন না",
+  "ok": "ঠিক আছে"
 }
+

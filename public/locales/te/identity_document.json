@@ -1,13 +1,13 @@
 {
-  "header": "గుర్తింపు పత్ర ధృవీకరణ",
-  "heading": "ఒక పత్రాన్ని ఎంచుకోండి",
-  "headingParagraph": "మీరు తదుపరి దశల్లో దాని చిత్రాన్ని తీస్తారు",
-  "adhaarcard": "ఆధార్ కార్డ్",
+  "identity_document_verification": "గుర్తింపు పత్ర ధృవీకరణ",
+  "select_a_documemt": "ఒక పత్రాన్ని ఎంచుకోండి",
+  "you_will_take_a_picture_of_it_in_next_steps": "మీరు తదుపరి దశల్లో దాని చిత్రాన్ని తీస్తారు",
+  "adhaar_card": "ఆధార్ కార్డ్",
   "passport": "పాస్పోర్ట్",
   "licence": "డ్రైవర్ లైసెన్స్",
-  "voterid": "ఓటరు ID",
-  "modalheading": "“వీడియో KYC” కెమెరాను యాక్సెస్ చేయాలనుకుంటోంది",
-  "modalparagraph": "డాక్యుమెంట్ మరియు ఫేషియల్ క్యాప్చర్ కోసం అవసరం",
-  "modaldontAllow": "అనుమతించవద్దు",
-  "modalok": "ఓహ్"
+  "voter_id": "ఓటరు ID",
+  "video_kyc_would_like_to_access_the_camera": "“వీడియో KYC” కెమెరాను యాక్సెస్ చేయాలనుకుంటోంది",
+  "required_for_document_and_facial_capture": "డాక్యుమెంట్ మరియు ఫేషియల్ క్యాప్చర్ కోసం అవసరం",
+  "don't_allow": "అనుమతించవద్దు",
+  "ok": "ఓహ్"
 }

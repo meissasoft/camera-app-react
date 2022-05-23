@@ -1,8 +1,8 @@
 {
-  "header": "ಮೊಬೈಲ್ ಪರಿಶೀಲನೆ",
-  "heading": "ಪರಿಶೀಲನೆ ಕೋಡ್",
-  "paragraph": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಗೆ ನಾವು ಕಳುಹಿಸಿದ ಪರಿಶೀಲನಾ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ",
-  "paragraph2": "ನಾನು ಕೋಡ್ ಸ್ವೀಕರಿಸಲಿಲ್ಲ",
+  "mobile_verification": "ಮೊಬೈಲ್ ಪರಿಶೀಲನೆ",
+  "verification_code": "ಪರಿಶೀಲನೆ ಕೋಡ್",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಗೆ ನಾವು ಕಳುಹಿಸಿದ ಪರಿಶೀಲನಾ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ",
+  "i_did'nt_receive_a_code": "ನಾನು ಕೋಡ್ ಸ್ವೀಕರಿಸಲಿಲ್ಲ",
   "resend": "ಮರುಕಳುಹಿಸಿ",
   "continue": "ಮುಂದುವರಿಸಿ"
 }

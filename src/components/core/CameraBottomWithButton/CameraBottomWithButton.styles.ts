@@ -10,7 +10,7 @@ export const Div = styled.div`
 export const DivContent = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px 0px;
 `;
 export const DivButton = styled.div`
   display: flex;

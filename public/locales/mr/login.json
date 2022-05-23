@@ -1,7 +1,7 @@
 {
-  "header": "सुरु करूया",
+  "get_started": "सुरु करूया",
   "login": "लॉगिन करा",
-  "scan": "QR स्कॅन करा",
+  "scan_qr": "QR स्कॅन करा",
   "or": "किंवा",
-  "placeholder": "मोबाईल नंबर टाका"
+  "enter_mobile_number": "मोबाईल नंबर टाका"
 }

@@ -1,9 +1,9 @@
 {
-  "header": "વિડિયો રેકોર્ડ કરો",
-  "heading": "સેલ્ફી વીડિયો રેકોર્ડ કરો",
-  "headingParagraph": "ચાલો ખાતરી કરીએ કે કોઈ તમને સુધારી રહ્યું નથી",
+  "record_video": "વિડિયો રેકોર્ડ કરો",
+  "record_a_selfie_video": "સેલ્ફી વીડિયો રેકોર્ડ કરો",
+  "let’s_make_sure_nobody’s_improvising_you": "ચાલો ખાતરી કરીએ કે કોઈ તમને સુધારી રહ્યું નથી",
   "instruction": "સૂચનાઓ",
-  "option1": "લોડ બોલો અને તમારું માથું ખસેડો",
-  "option2": "25 સેકન્ડમાં ક્રિયાઓ પૂર્ણ કરો.",
+  "speak_out_load_and_move_your_head": "લોડ બોલો અને તમારું માથું ખસેડો",
+  "finish_actions_in_25_seconds": "25 સેકન્ડમાં ક્રિયાઓ પૂર્ણ કરો.",
   "continue": "ચાલુ રાખો"
 }

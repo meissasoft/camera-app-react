@@ -1,8 +1,8 @@
 {
   "aadhaar_card": "आधार कार्ड",
-  "frontSide": "आधार कार्ड सामने की तरफ",
-  "backSide": "आधार कार्ड बैक साइड",
+  "aadhaar_card_front_side": "आधार कार्ड सामने की तरफ",
+  "aadhaar_card_back_side": "आधार कार्ड बैक साइड",
   "retake": "फिर से लेना",
-  "paragraph": "सुनिश्चित करें कि आपके कार्ड के विवरण बिना किसी धुंध या चकाचौंध के पढ़ने के लिए स्पष्ट हैं।",
+  "make_sure_that_your_card_details_are_clear_to_read_with_no_blur_or_glare": "सुनिश्चित करें कि आपके कार्ड के विवरण बिना किसी धुंध या चकाचौंध के पढ़ने के लिए स्पष्ट हैं।",
   "continue": "जारी रखें"
 }

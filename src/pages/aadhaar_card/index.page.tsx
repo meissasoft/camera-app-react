@@ -27,6 +27,7 @@ const AadhaarCard = () => {
   return (
     <DivMain>
       <Header text={t('aadhaar_card')} onClick={handleContinue} />
+
       <HeadingWithButton text={t('aadhaar_card_front_side')} retake={t('retake')} />
       <DivCard>
         <img src={cardFront} />

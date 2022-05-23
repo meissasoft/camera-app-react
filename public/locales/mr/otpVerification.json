@@ -1,8 +1,8 @@
 {
-  "header": "मोबाइल सत्यापन",
-  "heading": "सत्यापन कोड",
-  "paragraph": "कृपया आम्ही तुमच्या फोन नंबरवर पाठवलेला पडताळणी कोड एंटर करा",
-  "paragraph2": "मला कोड मिळाला नाही",
+  "mobile_verification": "मोबाइल सत्यापन",
+  "verification_code": "सत्यापन कोड",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "कृपया आम्ही तुमच्या फोन नंबरवर पाठवलेला पडताळणी कोड एंटर करा",
+  "i_did'nt_receive_a_code": "मला कोड मिळाला नाही",
   "resend": "पुन्हा पाठवा",
   "continue": "सुरू"
 }

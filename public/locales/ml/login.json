@@ -1,7 +1,7 @@
 {
-  "header": "തുടങ്ങി",
+  "get_started": "തുടങ്ങി",
   "login": "ലോഗിൻ",
-  "scan": "QR സ്കാൻ ചെയ്യുക",
+  "scan_qr": "QR സ്കാൻ ചെയ്യുക",
   "or": "അഥവാ",
-  "placeholder": "മൊബൈൽ നമ്പർ നൽകുക"
+  "enter_mobile_number": "മൊബൈൽ നമ്പർ നൽകുക"
 }
