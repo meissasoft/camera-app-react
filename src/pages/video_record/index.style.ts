@@ -93,3 +93,9 @@ export const DivRappingStyled = styled.div`
   align-content: center;
   justify-content: center;
 `;
+
+export const FooterButtonStyle = styled.div`
+  width: 100%;
+  position: relative;
+  margin-top: 60%;
+`;

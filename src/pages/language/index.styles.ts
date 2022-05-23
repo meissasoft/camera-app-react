@@ -4,6 +4,10 @@ import { COLORS } from '@/constants/colors';
 
 export const DivMain = styled.div`
   padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .button-container {
     width: 100%;
     margin-top: 48px;
@@ -51,5 +55,7 @@ export const DivMarginTop = styled.div`
   margin-top: -5px;
 `;
 export const FooterButtonStyle = styled.div`
-  margin-top: 2%;
+  width: 100%;
+  position: relative;
+  margin-top: 10%;
 `;
