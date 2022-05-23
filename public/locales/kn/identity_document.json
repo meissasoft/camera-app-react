@@ -1,13 +1,13 @@
 {
-  "header": "ಗುರುತಿನ ದಾಖಲೆ ಪರಿಶೀಲನೆ",
-  "heading": "ಡಾಕ್ಯುಮೆಟ್ ಆಯ್ಕೆಮಾಡಿ",
-  "headingParagraph": "ಮುಂದಿನ ಹಂತಗಳಲ್ಲಿ ನೀವು ಅದರ ಚಿತ್ರವನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ",
-  "adhaarcard": "ಆಧಾರ್ ಕಾರ್ಡ್",
+  "identity_document_verification": "ಗುರುತಿನ ದಾಖಲೆ ಪರಿಶೀಲನೆ",
+  "select_a_documemt": "ಡಾಕ್ಯುಮೆಟ್ ಆಯ್ಕೆಮಾಡಿ",
+  "you_will_take_a_picture_of_it_in_next_steps": "ಮುಂದಿನ ಹಂತಗಳಲ್ಲಿ ನೀವು ಅದರ ಚಿತ್ರವನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ",
+  "adhaar_card": "ಆಧಾರ್ ಕಾರ್ಡ್",
   "passport": "ಪಾಸ್ಪೋರ್ಟ್",
   "licence": "ಚಾಲಕ ಪರವಾನಗಿ",
-  "voterid": "ಮತದಾರರ ಗುರುತಿನ ಚೀಟಿ",
-  "modalheading": "\"ವೀಡಿಯೊ KYC\" ಕ್ಯಾಮೆರಾವನ್ನು ಪ್ರವೇಶಿಸಲು ಬಯಸುತ್ತದೆ",
-  "modalparagraph": "ಡಾಕ್ಯುಮೆಂಟ್ ಮತ್ತು ಮುಖದ ಸೆರೆಹಿಡಿಯುವಿಕೆಗೆ ಅಗತ್ಯವಿದೆ",
-  "modaldontAllow": "ಅನುಮತಿಸಬೇಡ",
-  "modalok": "ಓಹ್"
+  "voter_id": "ಮತದಾರರ ಗುರುತಿನ ಚೀಟಿ",
+  "video_kyc_would_like_to_access_the_camera": "\"ವೀಡಿಯೊ KYC\" ಕ್ಯಾಮೆರಾವನ್ನು ಪ್ರವೇಶಿಸಲು ಬಯಸುತ್ತದೆ",
+  "required_for_document_and_facial_capture": "ಡಾಕ್ಯುಮೆಂಟ್ ಮತ್ತು ಮುಖದ ಸೆರೆಹಿಡಿಯುವಿಕೆಗೆ ಅಗತ್ಯವಿದೆ",
+  "don't_allow": "ಅನುಮತಿಸಬೇಡ",
+  "ok": "ಓಹ್"
 }

@@ -1,8 +1,8 @@
 {
-  "headingFront": "ಕಾರ್ಡ್‌ನ ಮುಂಭಾಗ",
-  "headingBack": "ಕಾರ್ಡ್‌ನ ಹಿಂದೆ",
-  "headingParaFront": "ಫ್ರೇಮ್‌ನಲ್ಲಿ ಕಾರ್ಡ್‌ನ ಮುಂಭಾಗವನ್ನು ಇರಿಸಿ",
-  "headingParaBack": "ಫ್ರೇಮ್‌ನಲ್ಲಿ ಕಾರ್ಡ್‌ನ ಹಿಂಭಾಗವನ್ನು ಇರಿಸಿ",
+  "front_of_the_card": "ಕಾರ್ಡ್‌ನ ಮುಂಭಾಗ",
+  "back_of_the_card": "ಕಾರ್ಡ್‌ನ ಹಿಂದೆ",
+  "position_the_front_of_the_card_in_the_frame": "ಫ್ರೇಮ್‌ನಲ್ಲಿ ಕಾರ್ಡ್‌ನ ಮುಂಭಾಗವನ್ನು ಇರಿಸಿ",
+  "position_the_back_of_the_card_in_the_frame": "ಫ್ರೇಮ್‌ನಲ್ಲಿ ಕಾರ್ಡ್‌ನ ಹಿಂಭಾಗವನ್ನು ಇರಿಸಿ",
   "cancel": "ರದ್ದುಮಾಡು",
   "retake": "ಮರು-ತೆಗೆದುಕೊಳ್ಳಿ"
 }

@@ -1,13 +1,13 @@
 {
-  "header": "पहचान दस्तावेज़ सत्यापन",
-  "heading": "एक दस्तावेज़ चुनें",
-  "headingParagraph": "आप अगले चरणों में इसकी एक तस्वीर लेंगे",
-  "adhaarcard": "आधार कार्ड",
+  "identity_document_verification": "पहचान दस्तावेज़ सत्यापन",
+  "select_a_documemt": "एक दस्तावेज़ चुनें",
+  "you_will_take_a_picture_of_it_in_next_steps": "आप अगले चरणों में इसकी एक तस्वीर लेंगे",
+  "adhaar_card": "आधार कार्ड",
   "passport": "पासपोर्ट",
   "licence": "चालक लाइसेंस",
-  "voterid": "मतदाता पहचान पत्र",
-  "modalheading": "\"वीडियो केवाईसी\" कैमरे तक पहुंचना चाहेंगे",
-  "modalparagraph": "दस्तावेज़ और चेहरे पर कब्जा करने के लिए आवश्यक",
-  "modaldontAllow": "अनुमति न दें  ",
-  "modalok": "ओह"
+  "voter_id": "मतदाता पहचान पत्र",
+  "video_kyc_would_like_to_access_the_camera": "\"वीडियो केवाईसी\" कैमरे तक पहुंचना चाहेंगे",
+  "required_for_document_and_facial_capture": "दस्तावेज़ और चेहरे पर कब्जा करने के लिए आवश्यक",
+  "don't_allow": "अनुमति न दें  ",
+  "ok": "ओह"
 }
