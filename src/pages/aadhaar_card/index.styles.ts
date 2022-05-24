@@ -8,10 +8,11 @@ export const DivCard = styled.div`
   padding: 0px 0px 20px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 export const DivBottom = styled.div`
-  margin: 5px 0 15px 0;
+  margin: 10% 0 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -22,6 +23,5 @@ export const DivBottom = styled.div`
 `;
 export const DivHomeButton = styled.div`
   width: 100%;
-  position: relative;
-  margin-top: 20%;
+  margin-top: 10%;
 `;

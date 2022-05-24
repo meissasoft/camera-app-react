@@ -27,7 +27,7 @@ const onClickHeaderIcon = () => {
 const Verified = () => {
   const lottieHandler = () => {
     lottie?.loadAnimation({
-      container: document.querySelector('#lottieFile'),
+      container: document.querySelector('#lottieFile') as any,
       animationData: lottieFile,
       renderer: 'svg', // "canvas", "html"
       loop: false, // boolean

@@ -13,7 +13,6 @@ import Header from '@/components/core/Header';
 
 import {
   DivGraterThenIconStyled,
-  DivCenterContent,
   DivMain,
   DivRappingStyled,
   DivVideoStyled,
@@ -24,6 +23,7 @@ import {
   TextStyled,
   VidoRecordStyled,
   FooterButtonStyle,
+  Row,
 } from './index.style';
 
 /**
@@ -51,27 +51,19 @@ const VideoRecord = () => {
       <DivVideoStyled>
         <Image className="object-cover" src={Screenshot} />
       </DivVideoStyled>
-      <DivCenterContent>
-        <DivRappingStyled>
-          <InstructionStyled>{t('instruction')}</InstructionStyled>
-          <div className="d-flex">
-            <DivGraterThenIconStyled className="mx-3">
-              <GreaterThenIcon />
-            </DivGraterThenIconStyled>
-            <ParagraphInstructionPoint1Styled className="">
-              {t('speak_out_load_and_move_your_head')}
-            </ParagraphInstructionPoint1Styled>
-          </div>
-          <div className="d-flex">
-            <DivGraterThenIconStyled className="mx-3">
-              <GreaterThenIcon />
-            </DivGraterThenIconStyled>
-            <ParagraphInstructionpoint2Styled className="">
-              {t('finish_actions_in_25_seconds')}
-            </ParagraphInstructionpoint2Styled>
-          </div>
-        </DivRappingStyled>
-      </DivCenterContent>
+      <InstructionStyled>{t('instruction')}</InstructionStyled>
+      <Row>
+        <DivGraterThenIconStyled>
+          <GreaterThenIcon />
+        </DivGraterThenIconStyled>
+        <ParagraphInstructionPoint1Styled>{t('speak_out_load_and_move_your_head')}</ParagraphInstructionPoint1Styled>
+      </Row>
+      <Row>
+        <DivGraterThenIconStyled>
+          <GreaterThenIcon />
+        </DivGraterThenIconStyled>
+        <ParagraphInstructionPoint1Styled>{t('finish_actions_in_25_seconds')}</ParagraphInstructionPoint1Styled>
+      </Row>
       <FooterButtonStyle>
         <Button isBottom onClick={onClickContinue} className="m-auto">
           {t('continue')}

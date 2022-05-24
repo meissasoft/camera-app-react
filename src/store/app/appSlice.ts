@@ -5,6 +5,7 @@ import { appState } from './types';
 export const initialState: appState = {
   verificationStep: 0,
   selectedLanguage: 'en',
+  cardType: 'front',
   cardFront: '',
   cardBack: '',
   recordedVideo: '',
@@ -26,6 +27,9 @@ const appSlice = createSlice({
     setCardBack: (state: appState, action: PayloadAction<string>) => {
       state.cardBack = action.payload;
     },
+    setCardType: (state: appState, action: PayloadAction<string>) => {
+      state.cardType = action.payload;
+    },
   },
   // redux thunk will be added in extraReducers
   extraReducers: (builder: ActionReducerMapBuilder<appState>) => {
@@ -34,6 +38,6 @@ const appSlice = createSlice({
   },
 });
 
-export const { setVerificationStep, setRecordedVideo, setCardFront, setCardBack } = appSlice.actions;
+export const { setVerificationStep, setRecordedVideo, setCardFront, setCardBack, setCardType } = appSlice.actions;
 
 export default appSlice.reducer;

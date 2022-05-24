@@ -29,8 +29,8 @@ const Verification = () => {
   const { t } = useTranslation('camera_video');
   const [isDone, setIsDone] = useState(false);
   const [words, setWords] = useState('');
-  const [instruction, setinstruction] = useState(t('position_your_face'));
-  const [description, setDescriptoin] = useState(
+  const [instruction, setinstruction] = useState<any>(t('position_your_face'));
+  const [description, setDescriptoin] = useState<any>(
     t(`keep_your_face_within_the_oval_to_start_recording_and_follow_the_instructions`)
   );
 
@@ -41,22 +41,25 @@ const Verification = () => {
   const dispatch = useAppDispatch();
 
   const getVideo = () => {
+   if (navigator && navigator.mediaDevices){
     navigator.mediaDevices
-      .getUserMedia({
-        video: { width: 1920, height: 1080 },
-      })
-      .then((stream) => {
-        const video = videoRef.current as any;
-        video.srcObject = stream;
-        video.play();
-        mediaRecorder.current = new MediaRecorder(stream, { mimeType: 'video/webm' });
-        mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
-          blobsRecorded.push(e.data);
-        });
-      })
-      .catch((err) => {
-        console.log('Error', err);
+    .getUserMedia({
+      video: { width: 1920, height: 1080 },
+    })
+    .then((stream) => {
+      const video = videoRef.current as any;
+      video.srcObject = stream;
+      video.play();
+      mediaRecorder.current = new MediaRecorder(stream, { mimeType: 'video/webm' });
+      mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
+        blobsRecorded.push(e.data);
       });
+    })
+    .catch((err) => {
+      console.log('Error', err);
+    });
+   }
+   
   };
   useEffect(() => {
     getVideo();
@@ -70,7 +73,11 @@ const Verification = () => {
 
   const startVideoRecording = () => {
     setIsDone(false);
-    mediaRecorder?.current?.start(1000);
+    if (mediaRecorder && mediaRecorder.current) {
+      try{
+        mediaRecorder.current.start(1000);
+      } catch(err){}
+    }
     setTimeout(() => {
       setinstruction(t('instruction_1'));
       setDescriptoin(t('look_over_your_right_shoulder_and_back'));
@@ -91,7 +98,9 @@ const Verification = () => {
   };
 
   const stop = () => {
-    mediaRecorder?.current?.stop();
+    try {
+      mediaRecorder?.current?.stop();
+    } catch(err) {}
     setIsDone(true);
     dispatch(setRecordedVideo(URL.createObjectURL(new Blob(blobsRecorded, { type: 'video/webm' }))));
     router.push('/video_screen');

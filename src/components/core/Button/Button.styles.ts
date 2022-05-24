@@ -7,8 +7,7 @@ export const ButtonStyled = styled.button<{ backgroundColor?: string; hoverColor
     isBottom
       ? `inherit;
     `
-      : 'absolute'};
-  bottom: 20px;
+      : 'inherit'};
   margin-left: 18px;
   margin-right: 18px;
   min-width: 100px;
