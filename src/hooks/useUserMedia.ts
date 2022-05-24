@@ -29,7 +29,7 @@ export function useUserMedia(requestedMedia: MediaStreamConstraints | undefined,
     }
   }, [resetMediaStream]);
 
-  console.log("media", mediaStream)
+  console.log('media', mediaStream);
 
   return mediaStream;
 }

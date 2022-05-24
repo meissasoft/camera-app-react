@@ -41,25 +41,24 @@ const Verification = () => {
   const dispatch = useAppDispatch();
 
   const getVideo = () => {
-   if (navigator && navigator.mediaDevices){
-    navigator.mediaDevices
-    .getUserMedia({
-      video: { width: 1920, height: 1080 },
-    })
-    .then((stream) => {
-      const video = videoRef.current as any;
-      video.srcObject = stream;
-      video.play();
-      mediaRecorder.current = new MediaRecorder(stream, { mimeType: 'video/webm' });
-      mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
-        blobsRecorded.push(e.data);
-      });
-    })
-    .catch((err) => {
-      console.log('Error', err);
-    });
-   }
-   
+    if (navigator && navigator.mediaDevices) {
+      navigator.mediaDevices
+        .getUserMedia({
+          video: { width: 1920, height: 1080 },
+        })
+        .then((stream) => {
+          const video = videoRef.current as any;
+          video.srcObject = stream;
+          video.play();
+          mediaRecorder.current = new MediaRecorder(stream, { mimeType: 'video/webm' });
+          mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
+            blobsRecorded.push(e.data);
+          });
+        })
+        .catch((err) => {
+          console.log('Error', err);
+        });
+    }
   };
   useEffect(() => {
     getVideo();
@@ -74,9 +73,11 @@ const Verification = () => {
   const startVideoRecording = () => {
     setIsDone(false);
     if (mediaRecorder && mediaRecorder.current) {
-      try{
+      try {
         mediaRecorder.current.start(1000);
-      } catch(err){}
+      } catch (err) {
+        console.log('');
+      }
     }
     setTimeout(() => {
       setinstruction(t('instruction_1'));
@@ -100,7 +101,9 @@ const Verification = () => {
   const stop = () => {
     try {
       mediaRecorder?.current?.stop();
-    } catch(err) {}
+    } catch (err) {
+      console.log('');
+    }
     setIsDone(true);
     dispatch(setRecordedVideo(URL.createObjectURL(new Blob(blobsRecorded, { type: 'video/webm' }))));
     router.push('/video_screen');

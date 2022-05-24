@@ -1,14 +1,15 @@
 import router from 'next/router';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import CameraBottomWithButton from '@/components/core/CameraBottomWithButton';
-import { useAppDispatch, useAppSelector } from '@/hooks/useReduxTypedHooks';
+import { useAppDispatch } from '@/hooks/useReduxTypedHooks';
 import { setCardBack, setCardFront } from '@/store/app/appSlice';
 
+import { useUserMedia } from '@/hooks/useUserMedia';
 import {
   Canvas,
   DivCameraBox,
@@ -19,8 +20,6 @@ import {
   Video,
   DivFlex,
 } from './index.styles';
-import { useUserMedia } from '@/hooks/useUserMedia';
-import { getAppDataSelector } from '@/store/app';
 
 /**
  *

@@ -23,8 +23,7 @@ export const SmallTextStyled = styled.p`
   color: #121212;
   opacity: 0.6;
 `;
-export const DivVideoStyled = styled.div`
-`;
+export const DivVideoStyled = styled.div``;
 export const InstructionStyled = styled.p`
   font-style: normal;
   font-weight: 600;
@@ -82,7 +81,7 @@ export const DivRappingStyled = styled.div`
 
 export const FooterButtonStyle = styled.div`
   width: 100%;
-  margin-top: 30%
+  margin-top: 30%;
 `;
 
 export const Row = styled.div`
@@ -90,4 +89,4 @@ export const Row = styled.div`
   flex-direction: row;
   margin-left: 8px;
   margin-top: 10px;
-`
+`;

@@ -14,11 +14,9 @@ import Header from '@/components/core/Header';
 import {
   DivGraterThenIconStyled,
   DivMain,
-  DivRappingStyled,
   DivVideoStyled,
   InstructionStyled,
   ParagraphInstructionPoint1Styled,
-  ParagraphInstructionpoint2Styled,
   SmallTextStyled,
   TextStyled,
   VidoRecordStyled,
