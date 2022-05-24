@@ -30,19 +30,17 @@ const AadhaarCard = () => {
 
       <HeadingWithButton text={t('aadhaar_card_front_side')} retake={t('retake')} />
       <DivCard>
-        <img src={cardFront} />
+        <img src={cardFront} width="100%" />
         {/* <AadhaarFront /> */}
       </DivCard>
       <HeadingWithButton text={t('aadhaar_card_front_side')} retake={t('retake')} />
       <DivCard>
-        <img src={cardBack} />
+        <img src={cardBack} width="100%" />
         {/* <AadhaarBack /> */}
       </DivCard>
-      <div>
-        <DivBottom>{t('make_sure_that_your_card_details_are_clear_to_read_with_no_blur_or_glare')}</DivBottom>
-      </div>
+      <DivBottom>{t('make_sure_that_your_card_details_are_clear_to_read_with_no_blur_or_glare')}</DivBottom>
       <DivHomeButton>
-        <Button className="m-auto" isBottom onClick={handleContinue}>
+        <Button className="m-auto" onClick={handleContinue}>
           {t('continue')}
         </Button>
       </DivHomeButton>

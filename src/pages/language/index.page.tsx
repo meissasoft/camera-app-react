@@ -89,26 +89,26 @@ const ChooseLangugae = () => {
   };
   return (
     <DivMain>
-      <Header text="Choose a Language" onClick={onClickHeaderIcon} />
-      <DivMarginTop>
-        {langugaes.map(({ name, isActive }, ind) => (
-          <>
-            <Row onClick={() => onClickItem(ind)}>
-              <div className="col-11">
-                <StyledLanguage isActive={isActive}>{name}</StyledLanguage>
-              </div>
-              <div className="col-1">{isActive && <TickIcon />}</div>
-            </Row>
-            <StyledLine />
-          </>
-        ))}
-      </DivMarginTop>
+      <div>
+        <Header text="Choose a Language" onClick={onClickHeaderIcon} />
+        <DivMarginTop>
+          {langugaes.map(({ name, isActive }, ind) => (
+            <>
+              <Row onClick={() => onClickItem(ind)}>
+                <div className="col-11">
+                  <StyledLanguage isActive={isActive}>{name}</StyledLanguage>
+                </div>
+                <div className="col-1">{isActive && <TickIcon />}</div>
+              </Row>
+              <StyledLine />
+            </>
+          ))}
+        </DivMarginTop>
+      </div>
       <FooterButtonStyle>
-        <div className="button-container">
-          <Button isBottom onClick={handleContinue} className="m-auto">
-            Continue
-          </Button>
-        </div>
+        <Button isBottom onClick={handleContinue} className="m-auto">
+          Continue
+        </Button>
       </FooterButtonStyle>
     </DivMain>
   );

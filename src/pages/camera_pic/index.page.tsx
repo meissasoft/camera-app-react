@@ -1,6 +1,6 @@
 import router from 'next/router';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -9,6 +9,7 @@ import CameraBottomWithButton from '@/components/core/CameraBottomWithButton';
 import { useAppDispatch } from '@/hooks/useReduxTypedHooks';
 import { setCardBack, setCardFront } from '@/store/app/appSlice';
 
+import { useUserMedia } from '@/hooks/useUserMedia';
 import {
   Canvas,
   DivCameraBox,
@@ -22,49 +23,64 @@ import {
 
 /**
  *
- * @returns Verification page
+ * @returns Camera page
  */
 
-const Verification = () => {
+const CameraPic = () => {
+  const CAPTURE_OPTIONS = {
+    audio: false,
+    video: { facingMode: 'environment' },
+  };
+  const dispatch = useAppDispatch();
+  const { t } = useTranslation('camera_pic');
   const [isFront, setIsFront] = useState(true);
   const [cardFront, setcardFront] = useState('');
   const [cardBack, setcardBack] = useState('');
+  const mediaStream = useUserMedia(CAPTURE_OPTIONS, !isFront);
 
-  const videoRef = useRef(null);
-  const photoRef = useRef(null);
+  const videoRef = useRef(null) as any;
+  const photoRef = useRef(null) as any;
 
-  const dispatch = useAppDispatch();
+  // const getVideo = () => {
+  //   // if (navigator && navigator.mediaDevices) {
+  //     navigator.mediaDevices
+  //       .getUserMedia({
+  //         video: {
+  //           width: 1920,
+  //           height: 1080,
+  //           // facingMode: {
+  //           //   exact: 'user',
+  //           // },
+  //           facingMode: 'user'
+  //         },
+  //       })
+  //       .then((stream) => {
+  //         const video = videoRef.current as any;
+  //         video.srcObject = stream;
+  //         video.play();
+  //       })
+  //       .catch((err) => {
+  //         console.log('Error', err);
+  //       });
+  //   // }
+  // };
 
-  const getVideo = () => {
-    navigator.mediaDevices
-      .getUserMedia({
-        video: {
-          width: 1920,
-          height: 1080,
-          facingMode: {
-            exact: 'environment',
-          },
-        },
-      })
-      .then((stream) => {
-        const video = videoRef.current as any;
-        video.srcObject = stream;
-        video.play();
-      })
-      .catch((err) => {
-        console.log('Error', err);
-      });
-  };
-  useEffect(() => {
-    getVideo();
-  }, [videoRef]);
+  // useEffect(() => {
+  //   getVideo();
+  // }, [videoRef]);
+
+  function handleCanPlay() {
+    videoRef.current.play();
+  }
 
   const handleCancel = () => {
     router.push('/verification');
   };
+
   const handleRetake = () => {
     setIsFront(true);
   };
+
   const takePhoto = () => {
     const width = 314;
     const height = width / (16 / 9);
@@ -76,21 +92,32 @@ const Verification = () => {
     ctx.drawImage(video, 0, 0, width, height);
     const dataUrl = photo.toDataURL();
     if (cardFront.length < 5) {
-      dispatch(setCardFront(dataUrl));
       setcardFront(dataUrl);
+      dispatch(setCardFront(dataUrl));
+      handleClear();
+      setIsFront(false);
     } else if (cardBack.length < 5) {
       setcardBack(dataUrl);
       dispatch(setCardBack(dataUrl));
       router.push('/aadhaar_card');
     }
-    setIsFront(false);
   };
-  const { t } = useTranslation('camera_pic');
+
+  if (mediaStream && videoRef.current && !videoRef.current.srcObject) {
+    videoRef.current.srcObject = mediaStream;
+  }
+
+  function handleClear() {
+    const context = photoRef.current.getContext('2d');
+    context.clearRect(0, 0, photoRef.current.width, photoRef.current.height);
+    videoRef.current.srcObject = null;
+  }
+
   return (
     <DivMain>
       <VerificationStyled>
         <DivCameraBox>
-          <Video ref={videoRef}></Video>
+          <Video ref={videoRef} muted onCanPlay={handleCanPlay}></Video>
           <Canvas ref={photoRef}></Canvas>
         </DivCameraBox>
         <VerificationTextStyled>{isFront ? t('front_of_the_card') : t('back_of_the_card')}</VerificationTextStyled>
@@ -116,4 +143,4 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
   },
 });
 
-export default Verification;
+export default CameraPic;

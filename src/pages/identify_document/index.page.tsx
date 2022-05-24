@@ -61,7 +61,7 @@ const IdentityDocument = () => {
   };
   return (
     <DivMain>
-      <Header onClick={onClickHeaderIcon} text={t('identity_document_verification')} />
+      <Header onClick={onClickHeaderIcon} text={t('identity_document_verification')} isLongText={true} />
       <IdentificationStyled>
         <IdentificationTextStyled>{t('select_a_documemt')}</IdentificationTextStyled>
         <IdentificationSmallTextStyled>

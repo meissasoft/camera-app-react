@@ -38,7 +38,6 @@
           ["@/store", "./src/store/"],
           ["@/styles", "./src/styles/"],
           ["@/test-utils", "./src/utils/test-utils"],
-          ["@/theme", "./src/theme/"],
           ["@/utils", "./src/utils/"],
           ["@/validations", "./src/validations/"]
         ],

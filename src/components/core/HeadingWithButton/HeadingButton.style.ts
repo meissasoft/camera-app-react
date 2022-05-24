@@ -21,7 +21,7 @@ export const DivHeader = styled.div`
     border-color: #e2ecf3;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 15px;
   }
   .text {
     background: linear-gradient(90deg, ${COLORS.FAUX_CHINESE_BLUE} 0%, ${COLORS.SKY_100} 85%);
