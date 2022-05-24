@@ -11,10 +11,15 @@ export const DivContent = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 20px 0px;
+
+  p {
+    cursor: pointer;
+  }
 `;
 export const DivButton = styled.div`
   display: flex;
   justify-content: center;
+  cursor: pointer;
 `;
 
 export const DivSvg = styled.div`

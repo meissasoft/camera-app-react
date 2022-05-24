@@ -18,6 +18,7 @@ import {
   VerificationStyled,
   VerificationTextStyled,
   Video,
+  CenterView,
 } from './index.styles';
 
 /**
@@ -43,7 +44,13 @@ const Verification = () => {
   const getVideo = () => {
     navigator.mediaDevices
       .getUserMedia({
-        video: { width: 1920, height: 1080 },
+        video: {
+          width: 1920,
+          height: 1080,
+          facingMode: {
+            exact: 'user',
+          },
+        },
       })
       .then((stream) => {
         const video = videoRef.current as any;
@@ -108,7 +115,16 @@ const Verification = () => {
         <VerificationSmallTextStyled>{description}</VerificationSmallTextStyled>
         <DivWords>{words.length > 0 && words}</DivWords>
       </VerificationStyled>
-      <CameraBottomWithButton isVideo onClick={startVideoRecording} onCancel={handleCancel} onReTake={handleRetake} />
+      <div className="centerView">
+        <CenterView>
+          <CameraBottomWithButton
+            isVideo
+            onClick={startVideoRecording}
+            onCancel={handleCancel}
+            onReTake={handleRetake}
+          />
+        </CenterView>
+      </div>
     </DivMain>
   );
 };

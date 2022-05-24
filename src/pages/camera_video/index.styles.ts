@@ -93,3 +93,7 @@ export const DivWords = styled.div`
   text-align: center;
   color: #ffffff;
 `;
+export const CenterView = styled.div`
+  display: flex;
+  justify-content: center;
+`;
