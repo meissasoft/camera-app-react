@@ -14,13 +14,13 @@ function Header({ isLongText, text, onClick }: IHeaderProps) {
   return (
     <DivHeader>
       <div className="row flex">
-        <DivIcon className="col-2" onClick={onIconCLick} isLongText={isLongText}>
+        <DivIcon className="col-1" onClick={onIconCLick} isLongText={isLongText}>
           <LessThenIcon />
         </DivIcon>
-        <DivTitle className="col-8" isLongText={isLongText}>
+        <DivTitle className="col-10" isLongText={isLongText}>
           <StyledText isLongText={isLongText}>{text}</StyledText>
         </DivTitle>
-        <div className="col-2"></div>
+        <div className="col-1"></div>
       </div>
     </DivHeader>
   );

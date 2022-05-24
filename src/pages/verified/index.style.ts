@@ -1,7 +1,11 @@
 import styled from '@emotion/styled';
 
 export const DivMain = styled.div`
-  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 40px);
 `;
 export const VerificationStyled = styled.div`
   padding: 20px 0px;
@@ -30,11 +34,5 @@ export const VerificationSuccessfulSmallTextStyled = styled.p`
   margin-bottom: 0px !important;
 `;
 export const DivBottom = styled.div`
-  padding: 20px;
-  .css-4ew2wx {
-    width: 96%;
-    @media (max-width: 550px) {
-      width: 90%;
-    }
-  }
+  width: 100%;
 `;

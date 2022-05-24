@@ -40,7 +40,9 @@ export const DivCameraBox = styled.div`
   border: 1.5px solid #ffffff;
   border-radius: 8px;
 `;
-export const Canvas = styled.canvas``;
+export const Canvas = styled.canvas`
+  display: none;
+`;
 export const Video = styled.video`
   width: 100%;
   height: 100%;

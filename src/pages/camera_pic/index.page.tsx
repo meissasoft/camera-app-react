@@ -1,6 +1,6 @@
 import router from 'next/router';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -103,9 +103,11 @@ const CameraPic = () => {
     }
   };
 
-  if (mediaStream && videoRef.current && !videoRef.current.srcObject) {
-    videoRef.current.srcObject = mediaStream;
-  }
+  useEffect(() => {
+    if (mediaStream && videoRef.current && !videoRef.current.srcObject) {
+      videoRef.current.srcObject = mediaStream;
+    }
+  }, [mediaStream]);
 
   function handleClear() {
     const context = photoRef.current.getContext('2d');

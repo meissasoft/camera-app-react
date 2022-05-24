@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const DivMain = styled.div`
-  padding: 20px;
+  margin: 20px;
+  min-height: calc(100vh - 40px);
 `;
 
 export const VidoRecordStyled = styled.div`
