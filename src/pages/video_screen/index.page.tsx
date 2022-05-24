@@ -31,7 +31,7 @@ const VideoScreen = () => {
   const handleRetake = () => {
     router.push('/camera_video');
   };
-  console.log('recordedVideo', recordedVideo);
+
   return (
     <>
       <DivMain>
@@ -49,7 +49,7 @@ const VideoScreen = () => {
         </VerificationStyled>
       </DivMain>
       <DivBottomButton>
-        <Button isBottom className="m-auto" onClick={handleContinue}>
+        <Button className="mx-auto" onClick={handleContinue}>
           Submit Video
         </Button>
       </DivBottomButton>

@@ -11,7 +11,6 @@ import {
   DivBottom,
   DivMain,
   VerificationCardStyled,
-  VerificationStyled,
   VerificationSuccessfulSmallTextStyled,
   VerificationSuccessfulTextStyled,
 } from './index.style';
@@ -30,31 +29,29 @@ const Verified = () => {
       container: document.querySelector('#lottieFile') as any,
       animationData: lottieFile,
       renderer: 'svg', // "canvas", "html"
-      loop: false, // boolean
+      loop: true, // boolean
       autoplay: true, // boolean
     });
   };
 
   return (
-    <>
-      <DivMain id="lottieFile">
-        <VerificationStyled>
-          <Header text="Verification sucessful" onClick={onClickHeaderIcon} />
-          <VerificationCardStyled>
-            <VerifiiedIcon />
-          </VerificationCardStyled>
-          <VerificationSuccessfulTextStyled>Verification completed</VerificationSuccessfulTextStyled>
-          <VerificationSuccessfulSmallTextStyled>
-            Your verification is completed and all <br /> your data is stored securely.
-          </VerificationSuccessfulSmallTextStyled>
-        </VerificationStyled>
-      </DivMain>
+    <DivMain>
+      <div id="lottieFile">
+        <Header text="Verification sucessful" onClick={onClickHeaderIcon} />
+        <VerificationCardStyled>
+          <VerifiiedIcon />
+        </VerificationCardStyled>
+        <VerificationSuccessfulTextStyled>Verification completed</VerificationSuccessfulTextStyled>
+        <VerificationSuccessfulSmallTextStyled>
+          Your verification is completed and all <br /> your data is stored securely.
+        </VerificationSuccessfulSmallTextStyled>
+      </div>
       <DivBottom>
         <Button className="m-auto" onClick={lottieHandler}>
           Finish
         </Button>
       </DivBottom>
-    </>
+    </DivMain>
   );
 };
 

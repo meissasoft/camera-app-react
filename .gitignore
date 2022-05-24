@@ -34,3 +34,4 @@ out
 # Jetbrains IDE's config
 /.idea
 .env
+.husky

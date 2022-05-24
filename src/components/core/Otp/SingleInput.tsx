@@ -22,7 +22,7 @@ export function SingleOTPInputComponent({ focus, autoFocus, ...props }: SingleOT
     }
   }, [autoFocus, focus, prevFocus]);
 
-  return <input ref={inputRef} {...props} />;
+  return <input ref={inputRef} {...props} inputMode="numeric" />;
 }
 
 const SingleOTPInput = memo(SingleOTPInputComponent);

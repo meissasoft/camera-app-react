@@ -3,19 +3,11 @@ import styled from '@emotion/styled';
 import { COLORS } from '@/constants/colors';
 
 export const DivMain = styled.div`
-  padding: 20px;
-  height: 100vh;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .button-container {
-    width: 100%;
-    margin-top: 48px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  min-height: calc(100vh - 40px);
 `;
 
 export const Row = styled.div`
@@ -53,6 +45,9 @@ export const StyledColor = styled.div`
 `;
 export const DivMarginTop = styled.div`
   margin-top: -5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 70vh;
 `;
 export const FooterButtonStyle = styled.div`
   width: 100%;
