@@ -12,6 +12,7 @@ interface IButtonProps {
   hoverColor?: string;
   isBottom?: boolean;
   id?: string;
+  isTransparent?: boolean;
 }
 
 /**

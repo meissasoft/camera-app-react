@@ -19,7 +19,6 @@ import {
   ParagraphInstructionPoint1Styled,
   SmallTextStyled,
   TextStyled,
-  VidoRecordStyled,
   FooterButtonStyle,
   Row,
 } from './index.style';
@@ -41,27 +40,28 @@ const VideoRecord = () => {
 
   return (
     <DivMain>
-      <Header text={t('record_video')} onClick={onClickHeaderIcon} />
-      <VidoRecordStyled>
+      <div>
+        <Header text={t('record_video')} onClick={onClickHeaderIcon} />
         <TextStyled>{t('record_a_selfie_video')}</TextStyled>
         <SmallTextStyled>{t('let’s_make_sure_nobody’s_improvising_you')}</SmallTextStyled>
-      </VidoRecordStyled>
-      <DivVideoStyled>
-        <Image className="object-cover" src={Screenshot} />
-      </DivVideoStyled>
-      <InstructionStyled>{t('instruction')}</InstructionStyled>
-      <Row>
-        <DivGraterThenIconStyled>
-          <GreaterThenIcon />
-        </DivGraterThenIconStyled>
-        <ParagraphInstructionPoint1Styled>{t('speak_out_load_and_move_your_head')}</ParagraphInstructionPoint1Styled>
-      </Row>
-      <Row>
-        <DivGraterThenIconStyled>
-          <GreaterThenIcon />
-        </DivGraterThenIconStyled>
-        <ParagraphInstructionPoint1Styled>{t('finish_actions_in_25_seconds')}</ParagraphInstructionPoint1Styled>
-      </Row>
+        <DivVideoStyled>
+          <Image src={Screenshot} />
+        </DivVideoStyled>
+        <InstructionStyled>{t('instruction')}</InstructionStyled>
+        <Row>
+          <DivGraterThenIconStyled>
+            <GreaterThenIcon />
+          </DivGraterThenIconStyled>
+          <ParagraphInstructionPoint1Styled>{t('speak_out_load_and_move_your_head')}</ParagraphInstructionPoint1Styled>
+        </Row>
+        <Row>
+          <DivGraterThenIconStyled>
+            <GreaterThenIcon />
+          </DivGraterThenIconStyled>
+          <ParagraphInstructionPoint1Styled>{t('finish_actions_in_25_seconds')}</ParagraphInstructionPoint1Styled>
+        </Row>
+      </div>
+
       <FooterButtonStyle>
         <Button isBottom onClick={onClickContinue} className="m-auto">
           {t('continue')}

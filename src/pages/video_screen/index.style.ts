@@ -1,53 +1,45 @@
 import styled from '@emotion/styled';
+import { COLORS } from '@/constants/colors';
 
 export const DivMain = styled.div`
-  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh-100px);
+  .text {
+    background: linear-gradient(90deg, ${COLORS.FAUX_CHINESE_BLUE} 0%, ${COLORS.SKY_100} 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .btn {
+    margin-top: 20px;
+  }
 `;
-export const VerificationStyled = styled.div`
-  padding: 0px 0px;
-  list-group-item: list-group-item-action;
-`;
-export const VerificationCardStyled = styled.div`
+
+export const VideoCardStyled = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 0px 0;
 `;
-export const VerificationSuccessfulTextStyled = styled.p`
-  margin-top: 0px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 0px !important;
-`;
-export const VerificationSuccessfulSmallTextStyled = styled.p`
+
+export const VideoCardText = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 12px;
   text-align: center;
   color: #121212;
   opacity: 0.6;
-  margin-bottom: 0px !important;
 `;
 export const DivBottom = styled.div`
-  padding: 20px;
-  .css-4ew2wx {
-    width: 96%;
-    @media (max-width: 550px) {
-      width: 90%;
-    }
-  }
-`;
-export const DivBottomButton = styled.div`
-  padding: 20px;
-  .css-4ew2wx {
-    bottom: 80px;
-    width: 96%;
-    @media (max-width: 550px) {
-      width: 90%;
-    }
-  }
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 `;

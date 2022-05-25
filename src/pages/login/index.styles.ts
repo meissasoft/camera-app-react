@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { COLORS } from '@/constants/colors';
 export const DivMain = styled.div`
   padding: 20px 20px;
   .inner {
@@ -6,6 +7,15 @@ export const DivMain = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+  }
+  .text {
+    background: linear-gradient(90deg, ${COLORS.FAUX_CHINESE_BLUE} 0%, ${COLORS.SKY_100} 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
   }
   .loginInput {
     border: 1.2px solid #000000;
