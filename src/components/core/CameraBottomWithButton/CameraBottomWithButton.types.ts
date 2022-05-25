@@ -5,4 +5,5 @@ export type CameraBottomWithButtonProps = {
   onReTake?: any;
   cancel?: any;
   retake?: any;
+  counter?: string;
 };

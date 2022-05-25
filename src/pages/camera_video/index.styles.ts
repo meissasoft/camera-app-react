@@ -6,10 +6,11 @@ export const DivMain = styled.div`
   background-color: black;
   height: 100vh;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 export const VerificationStyled = styled.div`
-  padding: 20px 0px;
-  list-group-item: list-group-item-action;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,11 +48,12 @@ export const DivCameraBox = styled.div<{ background: boolean }>`
   margin: 10px 0;
   width: 340px;
   height: 340px;
+  display:flex;
+  flex-direction: column;
   border-radius: 200px;
   border-style: dashed;
   background: #8daef9;
   background:  ${({ background }) => (background ? '#8daef9;' : '#323131;')} 
-
   border-color: #ffffff;
   @media (max-width: 300px) {
     width: 270px;
@@ -83,8 +85,19 @@ export const Video = styled.video<{ isDone: boolean }>`
 
 export const DiveDone = styled.div`
   position: absolute;
-  margin-top: -175px;
-  margin-left: 163px;
+  width: 334px;
+  height: 334px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 300px) {
+    width: 265px;
+    height: 265px;
+  }
+  @media (max-height: 667px) {
+    width: 265px;
+    height: 265px;
+  }
 `;
 export const DivWords = styled.div`
   font-weight: 800;
