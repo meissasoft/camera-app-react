@@ -11,10 +11,11 @@ function CameraBottomWithButton({
   onClick,
   cancel,
   retake,
+  counter,
 }: CameraBottomWithButtonProps) {
   return (
     <Div>
-      {isVideo && <DivTime>00:00:50</DivTime>}
+      {isVideo && <DivTime>{counter}</DivTime>}
       <DivButton onClick={onClick}>
         <DivSvg>{isVideo ? <VideoButton /> : <CameraButton />}</DivSvg>
       </DivButton>

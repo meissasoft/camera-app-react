@@ -27,9 +27,12 @@ import {
 
 const Verification = () => {
   const { t } = useTranslation('camera_video');
-  const [isDone, setIsDone] = useState(false);
+  const [isDone, setIsDone] = useState<boolean>(false);
+  const [counter, setCounter] = useState<number>(20);
+  const [startRecording, setStartRecording] = useState<boolean>(false);
+
   const [words, setWords] = useState('');
-  const [instruction, setinstruction] = useState<any>(t('position_your_face'));
+  const [instruction, setInstruction] = useState<any>(t('position_your_face'));
   const [description, setDescriptoin] = useState<any>(
     t(`keep_your_face_within_the_oval_to_start_recording_and_follow_the_instructions`)
   );
@@ -64,14 +67,23 @@ const Verification = () => {
     getVideo();
   }, [videoRef]);
 
+  useEffect(() => {
+    if (startRecording === true) {
+      if (counter > 0) {
+        const timer = setInterval(() => setCounter(counter - 1), 1000);
+        return () => clearInterval(timer);
+      }
+      setStartRecording(false);
+    }
+  }, [startRecording, counter]);
+
   const handleCancel = () => {
     router.push('/verification');
   };
 
   const handleRetake = () => {};
 
-  const startVideoRecording = () => {
-    setIsDone(false);
+  const handleOnClick = () => {
     if (mediaRecorder && mediaRecorder.current) {
       try {
         mediaRecorder.current.start(1000);
@@ -79,8 +91,14 @@ const Verification = () => {
         console.log('');
       }
     }
+    setStartRecording(true);
+    startVideoRecording();
+  };
+
+  const startVideoRecording = () => {
+    setIsDone(false);
     setTimeout(() => {
-      setinstruction(t('instruction_1'));
+      setInstruction(t('instruction_1'));
       setDescriptoin(t('look_over_your_right_shoulder_and_back'));
     }, 3000);
     setTimeout(faceDone, 8000);
@@ -91,10 +109,11 @@ const Verification = () => {
     setIsDone(true);
     setTimeout(startWord, 2000);
   };
+
   const startWord = () => {
     setIsDone(false);
     setWords(`3 - 0 - 1 - 4`);
-    setinstruction(t('instruction_2'));
+    setInstruction(t('instruction_2'));
     setDescriptoin(t('say_each_digit_out_loud'));
   };
 
@@ -120,7 +139,15 @@ const Verification = () => {
         <VerificationSmallTextStyled>{description}</VerificationSmallTextStyled>
         <DivWords>{words.length > 0 && words}</DivWords>
       </VerificationStyled>
-      <CameraBottomWithButton isVideo onClick={startVideoRecording} onCancel={handleCancel} onReTake={handleRetake} />
+      <CameraBottomWithButton
+        isVideo
+        onClick={handleOnClick}
+        onCancel={handleCancel}
+        onReTake={handleRetake}
+        counter={`00:00:${counter}`}
+        cancel={t('cancel')}
+        retake={t('retake')}
+      />
     </DivMain>
   );
 };

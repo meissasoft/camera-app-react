@@ -6,10 +6,14 @@ export const DivMain = styled.div`
   background-color: black;
   height: 100vh;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 export const VerificationStyled = styled.div`
-  padding: 20px 0px;
-  list-group-item: list-group-item-action;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 export const VerificationCardStyled = styled.div`
   text-align: center;

@@ -1,6 +1,9 @@
+import { useEffect, useState } from 'react';
 import router from 'next/router';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import lottie from 'lottie-web';
+import Lottie from 'react-lottie';
 
 import lottieFile from '@/assets/jpg/7893-confetti-cannons.json';
 import { VerifiiedIcon } from '@/assets/svg/verified-Icon';
@@ -24,35 +27,59 @@ const onClickHeaderIcon = () => {
 };
 
 const Verified = () => {
+  const [displayLottie, setDisplayLottie] = useState<boolean>(false);
+  const [stop, setStop] = useState<boolean>(false);
+
+  const { t } = useTranslation('verified');
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: lottieFile,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
+  useEffect(() => {
+    if (displayLottie === true) {
+      setTimeout(() => {
+        setStop(true);
+        setDisplayLottie(false);
+      }, 4000);
+    }
+  }, [displayLottie]);
+
   const lottieHandler = () => {
-    lottie?.loadAnimation({
-      container: document.querySelector('#lottieFile') as any,
-      animationData: lottieFile,
-      renderer: 'svg', // "canvas", "html"
-      loop: false, // boolean
-      autoplay: true, // boolean
-    });
+    setDisplayLottie(true);
   };
 
   return (
     <DivMain>
-      <div id="lottieFile">
-        <Header text="Verification sucessful" onClick={onClickHeaderIcon} />
+      <div>
+        {displayLottie && <Lottie options={defaultOptions} isStopped={stop} style={{ position: 'fixed' }} />}
+        <Header text={t('verification_sucessful')} onClick={onClickHeaderIcon} />
         <VerificationCardStyled>
           <VerifiiedIcon />
         </VerificationCardStyled>
-        <VerificationSuccessfulTextStyled>Verification completed</VerificationSuccessfulTextStyled>
+        <VerificationSuccessfulTextStyled>{t('verification_completed')}</VerificationSuccessfulTextStyled>
         <VerificationSuccessfulSmallTextStyled>
-          Your verification is completed and all <br /> your data is stored securely.
+          {t('your_verification_is_completed_and_all_your_data_is_stored_securely')}
         </VerificationSuccessfulSmallTextStyled>
       </div>
       <DivBottom>
         <Button className="m-auto" onClick={lottieHandler}>
-          Finish
+          {t('finish')}
         </Button>
       </DivBottom>
     </DivMain>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['verified'])),
+  },
+});
 
 export default Verified;

@@ -8,6 +8,8 @@ export const DivMain = styled.div`
   min-height: calc(100vh - 40px);
 `;
 
+export const DivUpperSection = styled.div``;
+
 export const TextStyled = styled.p`
   margin-top: 20px;
   font-style: normal;
@@ -29,7 +31,7 @@ export const DivVideoStyled = styled.div`
   width: 100%;
   margin-top: 30px;
   span {
-    width: 100%;
+    width: 100% !important;
   }
 `;
 export const InstructionStyled = styled.p`
@@ -83,6 +85,7 @@ export const DivRappingStyled = styled.div`
 
 export const FooterButtonStyle = styled.div`
   width: 100%;
+  margin-top: 20px;
 `;
 
 export const Row = styled.div`

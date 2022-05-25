@@ -4,5 +4,7 @@
   "instruction_1": "Instruction-1",
   "look_over_your_right_shoulder_and_back": "Look over your right shoulder and back",
   "instruction_2": "Instruction-2",
-  "say_each_digit_out_loud": "Say each digit out loud"
+  "say_each_digit_out_loud": "Say each digit out loud",
+  "cancel": "Cancel",
+  "retake": "Re-take"
 }

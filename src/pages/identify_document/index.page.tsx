@@ -12,7 +12,7 @@ import { PassportIcon } from '@/assets/svg/passport-icon';
 import { VoterIcon } from '@/assets/svg/voter-icon';
 import Header from '@/components/core/Header';
 
-import MyVerticallyCenteredModal from '../identify_document_modal/index.page';
+import MyVerticallyCenteredModal from '@/components/identify_document_modal';
 import {
   DivGreaterIcon,
   DivMain,

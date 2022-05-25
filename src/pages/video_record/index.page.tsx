@@ -21,6 +21,7 @@ import {
   TextStyled,
   FooterButtonStyle,
   Row,
+  DivUpperSection,
 } from './index.style';
 
 /**
@@ -40,7 +41,7 @@ const VideoRecord = () => {
 
   return (
     <DivMain>
-      <div>
+      <DivUpperSection>
         <Header text={t('record_video')} onClick={onClickHeaderIcon} />
         <TextStyled>{t('record_a_selfie_video')}</TextStyled>
         <SmallTextStyled>{t('let’s_make_sure_nobody’s_improvising_you')}</SmallTextStyled>
@@ -60,7 +61,7 @@ const VideoRecord = () => {
           </DivGraterThenIconStyled>
           <ParagraphInstructionPoint1Styled>{t('finish_actions_in_25_seconds')}</ParagraphInstructionPoint1Styled>
         </Row>
-      </div>
+      </DivUpperSection>
 
       <FooterButtonStyle>
         <Button isBottom onClick={onClickContinue} className="m-auto">
