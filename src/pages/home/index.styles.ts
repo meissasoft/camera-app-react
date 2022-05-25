@@ -6,7 +6,7 @@ export const BixDiv = styled.div`
   flex-direction: column;
   align-items: space-between;
   justify-content: space-between;
-  min-height: calc(100vh - 40px);
+  height: calc(100vh - 40px);
 `;
 export const DivWrapper = styled.div`
   width: 100%;

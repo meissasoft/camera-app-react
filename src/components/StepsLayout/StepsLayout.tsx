@@ -9,7 +9,7 @@ import { StepsLayoutProps } from './StepsLayout.types';
 function StepLayout({ step, content, isDisabled = false, heading, rightIcon, onClick }: StepsLayoutProps) {
   return (
     <DivStepLayout disabled={isDisabled} onClick={onClick}>
-      <div className=" d-flex">
+      <div className="d-flex">
         <div className="col-11">
           <DivLabel>
             <DivStep>{step}</DivStep>

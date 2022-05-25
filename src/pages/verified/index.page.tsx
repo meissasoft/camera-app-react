@@ -29,7 +29,7 @@ const Verified = () => {
       container: document.querySelector('#lottieFile') as any,
       animationData: lottieFile,
       renderer: 'svg', // "canvas", "html"
-      loop: true, // boolean
+      loop: false, // boolean
       autoplay: true, // boolean
     });
   };

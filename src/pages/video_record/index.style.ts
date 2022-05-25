@@ -2,17 +2,17 @@ import styled from '@emotion/styled';
 
 export const DivMain = styled.div`
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: calc(100vh - 40px);
 `;
 
-export const VidoRecordStyled = styled.div`
-  list-group-item: list-group-item-action;
-`;
 export const TextStyled = styled.p`
   margin-top: 20px;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin-bottom: 0px !important;
 `;
@@ -20,33 +20,34 @@ export const SmallTextStyled = styled.p`
   margin-top: 4px !important ;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #121212;
   opacity: 0.6;
+  text-align: center;
 `;
-export const DivVideoStyled = styled.div``;
+export const DivVideoStyled = styled.div`
+  width: 100%;
+  margin-top: 30px;
+  span {
+    width: 100%;
+  }
+`;
 export const InstructionStyled = styled.p`
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
+  margin-top: 10px;
 `;
 export const ParagraphInstructionPoint1Styled = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   opacity: 0.6;
   margin: 0px 0px;
 `;
-export const ParagraphInstructionpoint2Styled = styled.p`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  opacity: 0.6;
-  margin-top: 10px;
-`;
+
 export const DivGraterThenIconStyled = styled.div`
   margin-right: 10px;
 `;
@@ -82,7 +83,6 @@ export const DivRappingStyled = styled.div`
 
 export const FooterButtonStyle = styled.div`
   width: 100%;
-  margin-top: 30%;
 `;
 
 export const Row = styled.div`

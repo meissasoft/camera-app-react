@@ -36,8 +36,8 @@ const Login = () => {
         <div className="separator">
           <p className="separatorText mx-2 my-3">{t('or')}</p>
         </div>
-        <Button isBottom onClick={handleLogin} className="my-2 m-auot">
-          {t('scan_qr')}
+        <Button onClick={handleLogin} className="my-2" isTransparent>
+          <span className="text">{t('scan_qr')}</span>
         </Button>
       </div>
     </DivMain>

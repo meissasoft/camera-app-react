@@ -5,14 +5,7 @@ import Header from '@/components/core/Header';
 import { useAppSelector } from '@/hooks/useReduxTypedHooks';
 import { getAppDataSelector } from '@/store/app';
 
-import {
-  DivBottom,
-  DivBottomButton,
-  DivMain,
-  VerificationCardStyled,
-  VerificationStyled,
-  VerificationSuccessfulSmallTextStyled,
-} from './index.style';
+import { DivBottom, DivMain, VideoCardStyled, VideoCardText } from './index.style';
 
 /**
  *
@@ -33,32 +26,25 @@ const VideoScreen = () => {
   };
 
   return (
-    <>
-      <DivMain>
-        <VerificationStyled>
-          <Header text="Record video" onClick={onClickHeaderIcon} />
-
-          <VerificationCardStyled>
-            <video width="100%" height="388" controls>
-              <source src={recordedVideo} type="video/mp4" />
-            </video>
-          </VerificationCardStyled>
-          <VerificationSuccessfulSmallTextStyled>
-            If you are not satified with your selfie video, we suggest you to re-take it.
-          </VerificationSuccessfulSmallTextStyled>
-        </VerificationStyled>
-      </DivMain>
-      <DivBottomButton>
+    <DivMain>
+      <div>
+        <Header text="Record video" onClick={onClickHeaderIcon} />
+        <VideoCardStyled>
+          <video width="100%" height="388" controls>
+            <source src={recordedVideo} type="video/mp4" />
+          </video>
+        </VideoCardStyled>
+        <VideoCardText>If you are not satified with your selfie video, we suggest you to re-take it.</VideoCardText>
+      </div>
+      <DivBottom>
         <Button className="mx-auto" onClick={handleContinue}>
           Submit Video
         </Button>
-      </DivBottomButton>
-      <DivBottom>
-        <Button isBottom className="m-auto" onClick={handleRetake}>
-          Re-take Video
+        <Button className="mx-auto btn" onClick={handleRetake} isTransparent>
+          <span className="text">Re-take Video</span>
         </Button>
       </DivBottom>
-    </>
+    </DivMain>
   );
 };
 

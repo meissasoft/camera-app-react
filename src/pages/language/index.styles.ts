@@ -47,10 +47,8 @@ export const DivMarginTop = styled.div`
   margin-top: -5px;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 70vh;
+  height: calc(100vh - 200px);
 `;
 export const FooterButtonStyle = styled.div`
   width: 100%;
-  position: relative;
-  margin-top: 10%;
 `;
