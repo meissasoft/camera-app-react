@@ -29,6 +29,10 @@ const Verification = () => {
   const dispatch = useAppDispatch();
 
   const onClickHeaderIcon = () => {
+    if (verificationStep === 2) {
+      router.push('/aadhaar_card');
+      return;
+    }
     router.push('/otpVerification');
   };
 
