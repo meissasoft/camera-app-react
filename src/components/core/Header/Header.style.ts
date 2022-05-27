@@ -4,7 +4,8 @@ export const StyledText = styled.div<{ isLongText: boolean | undefined }>`
   ${({ isLongText }) =>
     isLongText
       ? `justify-content: flex-start; 
-         margin-left: -8px;`
+         margin-left: -8px;
+         font-size: 19px !important; `
       : `justify-content: space-between;  
          text-align: center;`}
   font-style: normal;

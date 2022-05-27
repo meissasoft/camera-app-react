@@ -7,7 +7,13 @@ export const DivMain = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: calc(100vh - 40px);
+  height: calc(100vh - 40px);
+  @media (max-height: 719px) {
+    height: calc(100vh - 110px);
+  }
+  @media (max-height: 670px) {
+    height: calc(100vh - 40px);
+  }
 `;
 
 export const Row = styled.div`
