@@ -6,10 +6,9 @@ export const ButtonStyled = styled.button<{ backgroundColor?: string; hoverColor
   ${({ isTransparent }) =>
     isTransparent
       ? `
-  border: 2px solid #0000;
-  border-radius: 5px;
-  background: linear-gradient(white, white) padding-box,
-        linear-gradient(to left, ${COLORS.SKY_100}, ${COLORS.FAUX_CHINESE_BLUE}) border-box;
+      background-color: ${COLORS.BLUE_600};
+      border-color: ${COLORS.BLUE_600};
+      border: none;
 `
       : `
   border: 0px;

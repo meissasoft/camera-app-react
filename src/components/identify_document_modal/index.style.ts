@@ -24,10 +24,10 @@ export const BodyModalStyled = styled.p`
   padding: 0px;
 
   position: fixed;
-  width: 270px;
-  height: 160px;
-  left: calc(50% - 270px / 2 + 0.5px);
-  top: calc(50% - 160px / 2);
+  width: 350px;
+  height: 165px;
+  left: calc(50% - 350px / 2 + 0.5px);
+  top: calc(50% - 156px / 2);
   background: rgba(0, 0, 0, 0.8);
   background: rgba(242, 242, 242, 0.8);
   backdrop-filter: blur(54.3656px);
@@ -40,6 +40,7 @@ export const BodyModalStyled = styled.p`
     width: 100%;
     padding: 0;
     flex-wrap: nowrap;
+    height: 50px;
     border-top: 1px solid rgba(60, 60, 67, 0.29);
   }
   .btn:focus {
