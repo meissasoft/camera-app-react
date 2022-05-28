@@ -41,34 +41,6 @@ const CameraPic = () => {
   const videoRef = useRef(null) as any;
   const photoRef = useRef(null) as any;
 
-  // const getVideo = () => {
-  //   // if (navigator && navigator.mediaDevices) {
-  //     navigator.mediaDevices
-  //       .getUserMedia({
-  //         video: {
-  //           width: 1920,
-  //           height: 1080,
-  //           // facingMode: {
-  //           //   exact: 'user',
-  //           // },
-  //           facingMode: 'user'
-  //         },
-  //       })
-  //       .then((stream) => {
-  //         const video = videoRef.current as any;
-  //         video.srcObject = stream;
-  //         video.play();
-  //       })
-  //       .catch((err) => {
-  //         console.log('Error', err);
-  //       });
-  //   // }
-  // };
-
-  // useEffect(() => {
-  //   getVideo();
-  // }, [videoRef]);
-
   function handleCanPlay() {
     videoRef.current.play();
   }
@@ -105,6 +77,9 @@ const CameraPic = () => {
 
   useEffect(() => {
     if (mediaStream && videoRef.current && !videoRef.current.srcObject) {
+      videoRef.current.setAttribute('autoplay', '');
+      videoRef.current.setAttribute('muted', '');
+      videoRef.current.setAttribute('playsinline', '');
       videoRef.current.srcObject = mediaStream;
     }
   }, [mediaStream]);
@@ -119,7 +94,7 @@ const CameraPic = () => {
     <DivMain>
       <VerificationStyled>
         <DivCameraBox>
-          <Video ref={videoRef} muted onCanPlay={handleCanPlay}></Video>
+          <Video ref={videoRef} onCanPlay={handleCanPlay} controls={false}></Video>
           <Canvas ref={photoRef}></Canvas>
         </DivCameraBox>
         <VerificationTextStyled>{isFront ? t('front_of_the_card') : t('back_of_the_card')}</VerificationTextStyled>

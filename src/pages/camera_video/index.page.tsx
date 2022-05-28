@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { detect } from 'detect-browser';
 import { DoneIcon } from '@/assets/svg/done-icon';
 import CameraBottomWithButton from '@/components/core/CameraBottomWithButton';
 import { useAppDispatch } from '@/hooks/useReduxTypedHooks';
@@ -36,7 +37,7 @@ const Verification = () => {
   const [description, setDescriptoin] = useState<any>(
     t(`keep_your_face_within_the_oval_to_start_recording_and_follow_the_instructions`)
   );
-
+  const browser = detect();
   const videoRef = useRef(null);
   const mediaRecorder: any = useRef(null);
   const blobsRecorded: any = [];
@@ -48,12 +49,18 @@ const Verification = () => {
       navigator.mediaDevices
         .getUserMedia({
           video: { width: 1920, height: 1080 },
+          audio: true,
         })
         .then((stream) => {
           const video = videoRef.current as any;
+          video.setAttribute('autoplay', '');
+          video.setAttribute('muted', '');
+          video.setAttribute('playsinline', '');
           video.srcObject = stream;
           video.play();
-          mediaRecorder.current = new MediaRecorder(stream, { mimeType: 'video/webm' });
+          mediaRecorder.current = new MediaRecorder(stream, {
+            mimeType: browser?.name === 'chrome' ? 'video/webm' : 'video/mp4',
+          });
           mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
             blobsRecorded.push(e.data);
           });
@@ -124,7 +131,7 @@ const Verification = () => {
       console.log('');
     }
     setIsDone(true);
-    dispatch(setRecordedVideo(URL.createObjectURL(new Blob(blobsRecorded, { type: 'video/webm' }))));
+    dispatch(setRecordedVideo(URL.createObjectURL(new Blob(blobsRecorded, { type: 'video/mp4' }))));
     router.push('/video_screen');
   };
 
@@ -132,7 +139,7 @@ const Verification = () => {
     <DivMain>
       <VerificationStyled>
         <DivCameraBox background={isDone}>
-          <Video ref={videoRef} isDone={isDone}></Video>
+          <Video ref={videoRef} isDone={isDone} muted></Video>
           <DiveDone>{isDone && <DoneIcon />}</DiveDone>
         </DivCameraBox>
         <VerificationTextStyled>{instruction}</VerificationTextStyled>

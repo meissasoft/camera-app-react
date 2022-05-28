@@ -37,4 +37,5 @@ export const COLORS = {
   WHITE_08: '#00000008',
   WHITE: '#ffff',
   GREY_12: '#121212',
+  BLUE_600: '#e2ecf3',
 };

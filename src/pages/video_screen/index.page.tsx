@@ -35,7 +35,7 @@ const VideoScreen = () => {
       <div>
         <Header text={t('record_video')} onClick={onClickHeaderIcon} />
         <VideoCardStyled>
-          <video width="100%" height="388" controls>
+          <video width="100%" height="388" controls playsInline>
             <source src={recordedVideo} type="video/mp4" />
           </video>
         </VideoCardStyled>

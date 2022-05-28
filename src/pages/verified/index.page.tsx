@@ -57,10 +57,10 @@ const Verified = () => {
   return (
     <DivMain>
       <div>
-        {displayLottie && <Lottie options={defaultOptions} isStopped={stop} style={{ position: 'fixed' }} />}
         <Header text={t('verification_sucessful')} onClick={onClickHeaderIcon} />
         <VerificationCardStyled>
           <VerifiiedIcon />
+          {displayLottie && <Lottie options={defaultOptions} isStopped={stop} style={{ position: 'fixed' }} />}
         </VerificationCardStyled>
         <VerificationSuccessfulTextStyled>{t('verification_completed')}</VerificationSuccessfulTextStyled>
         <VerificationSuccessfulSmallTextStyled>
