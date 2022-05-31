@@ -92,6 +92,9 @@ export const DivRappingStyled = styled.div`
 export const FooterButtonStyle = styled.div`
   width: 100%;
   margin-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 `;
 
 export const Row = styled.div`

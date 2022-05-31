@@ -22,4 +22,7 @@ export const DivBottom = styled.div`
 export const DivHomeButton = styled.div`
   width: 100%;
   margin-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 `;

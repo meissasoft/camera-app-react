@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { detect } from 'detect-browser';
 import { DoneIcon } from '@/assets/svg/done-icon';
 import CameraBottomWithButton from '@/components/core/CameraBottomWithButton';
 import { useAppDispatch } from '@/hooks/useReduxTypedHooks';
@@ -37,7 +36,6 @@ const Verification = () => {
   const [description, setDescriptoin] = useState<any>(
     t(`keep_your_face_within_the_oval_to_start_recording_and_follow_the_instructions`)
   );
-  const browser = detect();
   const videoRef = useRef(null);
   const mediaRecorder: any = useRef(null);
   const blobsRecorded: any = [];
@@ -58,12 +56,21 @@ const Verification = () => {
           video.setAttribute('playsinline', '');
           video.srcObject = stream;
           video.play();
-          mediaRecorder.current = new MediaRecorder(stream, {
-            mimeType: browser?.name === 'chrome' ? 'video/webm' : 'video/mp4',
-          });
-          mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
-            blobsRecorded.push(e.data);
-          });
+          try {
+            mediaRecorder.current = new MediaRecorder(stream, {
+              mimeType: 'video/webm',
+            });
+            mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
+              blobsRecorded.push(e.data);
+            });
+          } catch (error) {
+            mediaRecorder.current = new MediaRecorder(stream, {
+              mimeType: 'video/mp4',
+            });
+            mediaRecorder.current.addEventListener('dataavailable', function (e: any) {
+              blobsRecorded.push(e.data);
+            });
+          }
         })
         .catch((err) => {
           console.log('Error', err);

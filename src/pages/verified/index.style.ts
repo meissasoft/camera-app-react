@@ -41,4 +41,7 @@ export const VerificationSuccessfulSmallTextStyled = styled.p`
 `;
 export const DivBottom = styled.div`
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 `;
