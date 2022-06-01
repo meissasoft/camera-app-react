@@ -34,4 +34,8 @@ export const DivLayout = styled.div`
 `;
 export const DivHomeButton = styled.div`
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 20px;
 `;

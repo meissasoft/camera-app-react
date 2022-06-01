@@ -95,6 +95,7 @@ export const FooterButtonStyle = styled.div`
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  padding-bottom: 20px;
 `;
 
 export const Row = styled.div`

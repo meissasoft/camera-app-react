@@ -38,11 +38,11 @@ export const VideoCardText = styled.p`
   opacity: 0.6;
 `;
 export const DivBottom = styled.div`
-  margin-top: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  padding-bottom: 20px;
 `;

@@ -19,10 +19,12 @@ export const DivBottom = styled.div`
   color: #121212;
   opacity: 0.6;
 `;
+
 export const DivHomeButton = styled.div`
   width: 100%;
   margin-top: 20px;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  padding-bottom: 20px;
 `;

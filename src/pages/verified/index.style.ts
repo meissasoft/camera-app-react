@@ -44,4 +44,5 @@ export const DivBottom = styled.div`
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  padding-bottom: 20px;
 `;
