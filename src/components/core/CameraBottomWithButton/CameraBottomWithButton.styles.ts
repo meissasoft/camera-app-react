@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
+import { COLORS } from '@/constants/colors';
 
 export const Div = styled.div`
   width: 100%;
-  color: white;
+  color: ${COLORS.WHITE};
   display: flex;
   flex-direction: column;
 `;
@@ -10,7 +11,6 @@ export const Div = styled.div`
 export const DivContent = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 20px 0px;
 `;
 export const DivButton = styled.div`
   display: flex;
@@ -18,9 +18,7 @@ export const DivButton = styled.div`
 `;
 
 export const DivSvg = styled.div`
-  &:active {
-    padding: 0px 0px 1px 0px;
-  }
+  padding: 0px 0px 1px 0px;
 `;
 export const DivTime = styled.div`
   text-align: center;

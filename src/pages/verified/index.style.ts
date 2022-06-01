@@ -6,12 +6,8 @@ export const DivMain = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: calc(100vh - 40px);
-  @media (max-height: 719px) {
-    height: calc(100vh - 110px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 40px);
-  }
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 `;
 export const VerificationStyled = styled.div`
   padding: 20px 0px;

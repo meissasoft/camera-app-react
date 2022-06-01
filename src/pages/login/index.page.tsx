@@ -8,7 +8,7 @@ import Button from '@/components/core/Button';
 import FieldInput from '@/components/core/FieldInput';
 import Heading from '@/components/core/Header';
 
-import { DivMain } from './index.styles';
+import { DivMain, StyledText, StyledSeperatorDiv, StyledSeperatorText, StyledInnerDiv } from './index.styles';
 
 const Login = () => {
   const { t } = useTranslation('login');
@@ -22,24 +22,20 @@ const Login = () => {
   return (
     <DivMain>
       <Heading text={t('get_started')} onClick={handleBack} />
-      <div className="inner">
+      <StyledInnerDiv>
         <MobileIcon />
-        <FieldInput
-          placeholder={t('enter_mobile_number')}
-          name={'mobile'}
-          className="my-2 mt-5 m-auto rounded border p-2 loginInput"
-        />
-        <Button isBottom onClick={handleLogin} className="my-2 m-auto">
+        <FieldInput placeholder={t('enter_mobile_number')} name="mobile" className="my-2 mt-5 rounded border p-2" />
+        <Button onClick={handleLogin} className="my-2 m-auto">
           {t('login')}
         </Button>
 
-        <div className="separator">
-          <p className="separatorText mx-2 my-3">{t('or')}</p>
-        </div>
+        <StyledSeperatorDiv>
+          <StyledSeperatorText className="mx-2 my-3">{t('or')}</StyledSeperatorText>
+        </StyledSeperatorDiv>
         <Button onClick={handleLogin} className="my-2" isTransparent>
-          <span className="text">{t('scan_qr')}</span>
+          <StyledText>{t('scan_qr')}</StyledText>
         </Button>
-      </div>
+      </StyledInnerDiv>
     </DivMain>
   );
 };

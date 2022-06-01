@@ -7,13 +7,9 @@ export const DivMain = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 40px);
-  @media (max-height: 720px) {
-    height: calc(100vh - 110px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 40px);
-  }
+  height: 100vh;
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 `;
 
 export const Row = styled.div`
@@ -61,5 +57,5 @@ export const FooterButtonStyle = styled.div`
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 `;

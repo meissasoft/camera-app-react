@@ -90,6 +90,8 @@ export const IineModel = styled.p`
   background: rgba(60, 60, 67, 0.29);
 `;
 export const CenterModel = styled(Modal)`
+  -webkit-animation: fadeInDown 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInDown 500ms ease-in-out;
   & > div > div {
     border: none !important;
   }

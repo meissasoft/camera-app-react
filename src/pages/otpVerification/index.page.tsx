@@ -62,8 +62,9 @@ const VerifyOtp = () => {
             <span className="text">{t('resend')}</span>
           </button>
         </div>
-
-        <Button isBottom onClick={handleContinue} className="my-5 m-auto">
+      </div>
+      <div className="footer-container px-3">
+        <Button onClick={handleContinue} className="m-auto">
           {t('continue')}
         </Button>
       </div>

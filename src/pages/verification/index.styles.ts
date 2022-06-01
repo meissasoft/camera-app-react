@@ -1,7 +1,9 @@
 import styled from '@emotion/styled';
 
 export const DivMain = styled.div`
-  padding: 20px;
+  margin: 20px;
+  -webkit-animation: fadeInUp 1 ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 `;
 export const VerificationStyled = styled.div`
   padding: 20px 0px;

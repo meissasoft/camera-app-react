@@ -5,21 +5,19 @@ import { COLORS } from '@/constants/colors';
 export const DivMain = styled.div`
   background-color: black;
   height: 100vh;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 `;
-export const VerificationStyled = styled.div`
+export const DivVideoStyled = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 `;
-export const VerificationCardStyled = styled.div`
-  text-align: center;
-`;
-export const VerificationTextStyled = styled.p`
+
+export const TextStyled = styled.p`
   color: ${COLORS.WHITE};
   margin-top: 1%;
   font-style: normal;
@@ -30,8 +28,11 @@ export const VerificationTextStyled = styled.p`
   @media (max-width: 300px) {
     font-size: 18px;
   }
+  padding-left: 20px;
+  padding-right: 20px;
 `;
-export const VerificationSmallTextStyled = styled.p`
+
+export const SmallTextStyled = styled.p`
   margin-top: 4px !important ;
   font-style: normal;
   font-weight: 400;
@@ -43,6 +44,8 @@ export const VerificationSmallTextStyled = styled.p`
   @media (max-width: 300px) {
     font-size: 13px;
   }
+  padding-left: 20px;
+  padding-right: 20px;
 `;
 export const DivCameraBox = styled.div<{ background: boolean }>`
   margin: 10px 0;
@@ -105,4 +108,15 @@ export const DivWords = styled.div`
   line-height: 31px;
   text-align: center;
   color: #ffffff;
+`;
+
+export const DivFlex = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: ${COLORS.BLACK_100};
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 0px 20px 22px 20px;
 `;

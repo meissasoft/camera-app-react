@@ -7,12 +7,8 @@ export const BixDiv = styled.div`
   align-items: space-between;
   justify-content: space-between;
   height: calc(100vh - 40px);
-  @media (max-height: 720px) {
-    height: calc(100vh - 110px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 40px);
-  }
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 `;
 export const DivWrapper = styled.div`
   width: 100%;
@@ -37,5 +33,5 @@ export const DivHomeButton = styled.div`
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 `;

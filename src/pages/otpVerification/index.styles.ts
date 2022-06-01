@@ -3,13 +3,16 @@ import styled from '@emotion/styled';
 import { COLORS } from '@/constants/colors';
 
 export const DivMain = styled.div`
-  padding: 20px 0px;
+  margin: 20px 0px 0px 0px;
+  -webkit-animation: fadeInUp 1 ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
   .heading {
     padding-left: 20px;
     padding-right: 20px;
   }
   .inner {
-    padding: 20px;
+    height: 100vh;
+    padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     align-content  flex-start;
@@ -94,28 +97,16 @@ export const DivMain = styled.div`
     text-fill-color: transparent;
   }
 
-  .otpInput1:focus {
-    border: none;
-    border-bottom: 2px solid #0000;
-    background: linear-gradient(white, white) padding-box,
-      linear-gradient(to left, ${COLORS.SKY_100}, ${COLORS.FAUX_CHINESE_BLUE}) border-box;
-    text-align: center;
-    outline: none;
-  }
   .btn {
     padding: 0px 8px;
   }
 
   .btn-primary {
     outline: none;
-    background-color: #e2ecf3;
-    border-color: #e2ecf3;
+    background-color: ${COLORS.PARROT_100};
+    border-color: ${COLORS.PARROT_100};
     font-weight: 600;
     font-size: 12px;
-  }
-
-  .btn-primary:focus {
-    outline: none;
   }
 
   .code-text {
@@ -124,5 +115,13 @@ export const DivMain = styled.div`
     text-align: center;
     color: ${COLORS.GREY_12};
     opacity: 0.6;
+  }
+
+  .footer-container {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    padding-bottom: 22px;
   }
 `;

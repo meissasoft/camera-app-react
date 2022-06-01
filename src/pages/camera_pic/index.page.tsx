@@ -14,9 +14,9 @@ import {
   Canvas,
   DivCameraBox,
   DivMain,
-  VerificationSmallTextStyled,
-  VerificationStyled,
-  VerificationTextStyled,
+  SmallTextStyled,
+  DivCentered,
+  TextStyled,
   Video,
   DivFlex,
 } from './index.styles';
@@ -92,16 +92,16 @@ const CameraPic = () => {
 
   return (
     <DivMain>
-      <VerificationStyled>
+      <DivCentered>
         <DivCameraBox>
           <Video ref={videoRef} onCanPlay={handleCanPlay} controls={false}></Video>
           <Canvas ref={photoRef}></Canvas>
         </DivCameraBox>
-        <VerificationTextStyled>{isFront ? t('front_of_the_card') : t('back_of_the_card')}</VerificationTextStyled>
-        <VerificationSmallTextStyled>
+        <TextStyled>{isFront ? t('front_of_the_card') : t('back_of_the_card')}</TextStyled>
+        <SmallTextStyled>
           {isFront ? t('position_the_front_of_the_card_in_the_frame') : t('position_the_back_of_the_card_in_the_frame')}
-        </VerificationSmallTextStyled>
-      </VerificationStyled>
+        </SmallTextStyled>
+      </DivCentered>
       <DivFlex>
         <CameraBottomWithButton
           onClick={takePhoto}

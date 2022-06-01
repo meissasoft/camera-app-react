@@ -66,6 +66,16 @@ const ChooseLangugae = () => {
       isActive: false,
       code: 'bn',
     },
+    {
+      name: 'Gujarati',
+      isActive: false,
+      code: 'gu',
+    },
+    {
+      name: 'Bengali',
+      isActive: false,
+      code: 'bn',
+    },
   ]);
 
   const [selectedLangugage, setSelectedLanguage] = useState<string>(langugaes[0].code);
@@ -100,7 +110,7 @@ const ChooseLangugae = () => {
                 </div>
                 <div className="col-1">{isActive && <TickIcon />}</div>
               </Row>
-              <StyledLine />
+              {ind + 1 === langugaes.length ? '' : <StyledLine />}
             </>
           ))}
         </DivMarginTop>

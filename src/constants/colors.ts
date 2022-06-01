@@ -38,4 +38,5 @@ export const COLORS = {
   WHITE: '#ffff',
   GREY_12: '#121212',
   BLUE_600: '#e2ecf3',
+  PARROT_100: '#e2ecf3',
 };
