@@ -5,6 +5,13 @@ export const DivMain = styled.div`
   margin: 20px;
   -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
   animation: fadeInUp 500ms ease-in-out;
+  .css-mmdbdd {
+    color: ${COLORS.Error};
+  }
+  .css-cssveg {
+    width: 100%;
+    margin-top: 40px;
+  }
 `;
 
 export const StyledText = styled.span`

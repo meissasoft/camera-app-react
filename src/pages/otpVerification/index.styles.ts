@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 import { COLORS } from '@/constants/colors';
 
-export const DivMain = styled.div`
+export const DivMain = styled.div<{ isError: boolean }>`
   margin: 20px 0px 0px 0px;
   -webkit-animation: fadeInUp 1 ease-in-out; /* Chrome, Safari, Opera */
   animation: fadeInUp 500ms ease-in-out;
@@ -15,7 +15,7 @@ export const DivMain = styled.div`
     padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
-    align-content  flex-start;
+    align-content:  flex-start;
     justify-content: flex-start;
     align-items: center;
     margin-top:10px;
@@ -70,7 +70,7 @@ export const DivMain = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    border-bottom: 2.5px solid rgba(0, 0, 0, 0.1);
+    ${({ isError }) => (isError ? `border-bottom: 2.5px solid red;` : `border-bottom: 2.5px solid rgba(0, 0, 0, 0.1);`)}
     margin-right: 10px;
     text-align: center;
     outline: none;
@@ -124,4 +124,18 @@ export const DivMain = styled.div`
     bottom: 0;
     padding-bottom: 22px;
   }
+`;
+
+export const DivError = styled.div`
+  margin-top: 10px;
+  margin-bottom: -5px;
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #f11414;
 `;
