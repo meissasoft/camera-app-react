@@ -28,7 +28,7 @@ const VerifyOtp = () => {
   };
   const handleOtp = (e: any) => {
     setOtp(e);
-    console.log(otp);
+    // for error
     if (otp.length >= 5) {
       setError(true);
     } else setError(false);
@@ -44,40 +44,43 @@ const VerifyOtp = () => {
         <Heading text={t('mobile_verification')} onClick={handleBack} />
       </div>
       <div className="inner">
-        <div className="barIcon">
-          <BarIcon />
+        <div className="relative">
+          <div className="barIcon">
+            <BarIcon />
+          </div>
+          <div className="crossIcon" onClick={handleBack}>
+            <CrossIcon />
+          </div>
+          <div className="my-5 text-center">
+            <PasswordIcon />
+            <div className="title">{t('verification_code')}</div>
+            <p className="description">{t('please_enter_the_verification_code_we_sent_to_your_phone_number')}</p>
+          </div>
+          <OTPInput
+            autoFocus
+            isNumberInput
+            length={6}
+            className="otpContainer"
+            inputClassName="otpInput"
+            onChangeOTP={handleOtp}
+          />
+          {error && (
+            <DivError>
+              <ErrorInfo /> &nbsp; Invalid OTP entered.
+            </DivError>
+          )}
+          <div className="d-flex w-100 justify-content-center align-items-center mt-4">
+            <span className="mx-2 code-text">{t("i_did'nt_receive_a_code")}</span>
+            <button className="btn btn-primary">
+              <span className="text">{t('resend')}</span>
+            </button>
+          </div>
         </div>
-        <div className="crossIcon" onClick={handleBack}>
-          <CrossIcon />
+        <div className="footer-container">
+          <Button onClick={handleContinue} className="m-auto">
+            {t('continue')}
+          </Button>
         </div>
-        <div className="my-5 text-center">
-          <PasswordIcon />
-          <div className="title">{t('verification_code')}</div>
-          <p className="description">{t('please_enter_the_verification_code_we_sent_to_your_phone_number')}</p>
-        </div>
-        <OTPInput
-          autoFocus
-          isNumberInput
-          length={6}
-          className="otpContainer"
-          inputClassName="otpInput"
-          onChangeOTP={handleOtp}
-        />
-        {error && (
-          <DivError>
-            <ErrorInfo /> &nbsp; Invalid OTP entered.
-          </DivError>
-        )}
-        <div className="d-flex w-100 justify-content-center align-items-center mt-4">
-          <span className="mx-2 code-text">{t("i_did'nt_receive_a_code")}</span>
-          <button className="btn btn-primary">
-            <span className="text">{t('resend')}</span>
-          </button>
-        </div>
-
-        <Button isBottom onClick={handleContinue} className="my-5 m-auto">
-          {t('continue')}
-        </Button>
       </div>
     </DivMain>
   );

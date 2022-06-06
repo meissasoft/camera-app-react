@@ -4,5 +4,9 @@
   "please_enter_the_verification_code_we_sent_to_your_phone_number": "Please enter the verification code we sent to your phone number",
   "i_did'nt_receive_a_code": "I did'nt receive a code",
   "resend": "Resend",
-  "continue": "Continue"
+  "continue": "Continue",
+  "verification_failed": "Verification Failed",
+  "verification_not_completed": "Verification not completed",
+  "your_verification_is_not_completed_please_try_again": "Your verification is not completed please try again.",
+  "try_again": "Try Again"
 }
