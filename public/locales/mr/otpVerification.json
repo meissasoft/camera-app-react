@@ -4,5 +4,9 @@
   "please_enter_the_verification_code_we_sent_to_your_phone_number": "कृपया आम्ही तुमच्या फोन नंबरवर पाठवलेला पडताळणी कोड एंटर करा",
   "i_did'nt_receive_a_code": "मला कोड मिळाला नाही",
   "resend": "पुन्हा पाठवा",
-  "continue": "सुरू"
+  "continue": "सुरू",
+  "verification_failed": "पडताळणी अयशस्वी",
+  "verification_not_completed": "पडताळणी पूर्ण झाली नाही",
+  "your_verification_is_not_completed_please_try_again": "तुमचे सत्यापन पूर्ण झाले नाही कृपया पुन्हा प्रयत्न करा.",
+  "try_again": "पुन्हा प्रयत्न करा"
 }

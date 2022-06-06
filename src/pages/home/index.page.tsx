@@ -23,7 +23,7 @@ const Home = () => {
         </DivLayout>
       </DivWrapper>
       <DivHomeButton>
-        <Button onClick={handleStarted} className="m-auto">
+        <Button onClick={handleStarted} className="m-auto fw-bold">
           Get Started
         </Button>
       </DivHomeButton>

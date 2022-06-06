@@ -66,16 +66,6 @@ const ChooseLangugae = () => {
       isActive: false,
       code: 'bn',
     },
-    {
-      name: 'Gujarati',
-      isActive: false,
-      code: 'gu',
-    },
-    {
-      name: 'Bengali',
-      isActive: false,
-      code: 'bn',
-    },
   ]);
 
   const [selectedLangugage, setSelectedLanguage] = useState<string>(langugaes[0].code);
