@@ -3,6 +3,7 @@ import router from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+import { useState } from 'react';
 import { BarIcon } from '@/assets/svg/barIcon';
 import { CrossIcon } from '@/assets/svg/crossIcon';
 import { PasswordIcon } from '@/assets/svg/password';
@@ -12,24 +13,33 @@ import OTPInput from '@/components/core/Otp';
 import { useAppDispatch } from '@/hooks/useReduxTypedHooks';
 import { setVerificationStep } from '@/store/app';
 
-import { DivMain } from './index.styles';
+import { ErrorInfo } from '@/assets/svg/error-info';
+import { DivError, DivMain } from './index.styles';
 
 const VerifyOtp = () => {
   const dispatch = useAppDispatch();
+  const [otp, setOtp] = useState<string>('');
+  const [error, setError] = useState<boolean>(false);
 
   const { t } = useTranslation('otpVerification');
 
   const handleBack = () => {
     router.push('/login');
   };
-
+  const handleOtp = (e: any) => {
+    setOtp(e);
+    console.log(otp);
+    if (otp.length >= 5) {
+      setError(true);
+    } else setError(false);
+  };
   const handleContinue = () => {
     router.push('/verification');
     dispatch(setVerificationStep(1));
   };
 
   return (
-    <DivMain>
+    <DivMain isError={error}>
       <div className="heading">
         <Heading text={t('mobile_verification')} onClick={handleBack} />
       </div>
@@ -51,20 +61,21 @@ const VerifyOtp = () => {
           length={6}
           className="otpContainer"
           inputClassName="otpInput"
-          onChangeOTP={(e) => {
-            console.log(e);
-          }}
+          onChangeOTP={handleOtp}
         />
-
+        {error && (
+          <DivError>
+            <ErrorInfo /> &nbsp; Invalid OTP entered.
+          </DivError>
+        )}
         <div className="d-flex w-100 justify-content-center align-items-center mt-4">
           <span className="mx-2 code-text">{t("i_did'nt_receive_a_code")}</span>
           <button className="btn btn-primary">
             <span className="text">{t('resend')}</span>
           </button>
         </div>
-      </div>
-      <div className="footer-container px-3">
-        <Button onClick={handleContinue} className="m-auto">
+
+        <Button isBottom onClick={handleContinue} className="my-5 m-auto">
           {t('continue')}
         </Button>
       </div>

@@ -39,4 +39,6 @@ export const COLORS = {
   GREY_12: '#121212',
   BLUE_600: '#e2ecf3',
   PARROT_100: '#e2ecf3',
+  Error: '#F11414',
+  RED: 'red',
 };

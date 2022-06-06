@@ -1,11 +1,12 @@
-import { ChangeEventHandler } from 'react';
+import { InputHTMLAttributes } from 'react';
 
-export type IInputProps = {
+export interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   id?: string;
-  onChange?: ChangeEventHandler<HTMLInputElement>;
   className?: string;
   placeholder?: string;
   type?: string;
   InputProps?: any;
-};
+  isDate?: boolean;
+  error?: string;
+}
