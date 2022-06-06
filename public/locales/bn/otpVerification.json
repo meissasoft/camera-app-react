@@ -4,5 +4,9 @@
   "please_enter_the_verification_code_we_sent_to_your_phone_number": "আমরা আপনার ফোন নম্বরে যে যাচাইকরণ কোডটি পাঠিয়েছি দয়া করে সেটি লিখুন",
   "i_did'nt_receive_a_code": "আমি একটি কোড পাইনি",
   "resend": "আবার পাঠান",
-  "continue": "চালিয়ে যান"
+  "continue": "চালিয়ে যান",
+  "verification_failed": "যাচাই ব্যর্থ",
+  "verification_not_completed": "যাচাইকরণ সম্পূর্ণ হয়নি",
+  "your_verification_is_not_completed_please_try_again": "আপনার যাচাইকরণ সম্পূর্ণ হয়নি অনুগ্রহ করে আবার চেষ্টা করুন.",
+  "try_again": "আবার চেষ্টা করুন"
 }

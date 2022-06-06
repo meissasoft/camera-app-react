@@ -4,6 +4,10 @@
   "please_enter_the_verification_code_we_sent_to_your_phone_number": "કૃપા કરીને અમે તમારા ફોન નંબર પર મોકલેલ ચકાસણી કોડ દાખલ કરો",
   "i_did'nt_receive_a_code": "મને કોડ મળ્યો નથી",
   "resend": "ફરી મોકલો",
-  "continue": "ચાલુ રાખો"
+  "continue": "ચાલુ રાખો",
+  "verification_failed": "ચકાસણી નિષ્ફળ",
+  "verification_not_completed": "ચકાસણી પૂર્ણ થઈ નથી",
+  "your_verification_is_not_completed_please_try_again": "તમારી ચકાસણી પૂર્ણ થઈ નથી, કૃપા કરીને ફરી પ્રયાસ કરો.",
+  "try_again": "ફરીથી પ્રયત્ન કરો"
 }
 

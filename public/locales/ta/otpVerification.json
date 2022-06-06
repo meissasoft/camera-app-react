@@ -4,5 +4,9 @@
   "please_enter_the_verification_code_we_sent_to_your_phone_number": "உங்கள் தொலைபேசி எண்ணுக்கு நாங்கள் அனுப்பிய சரிபார்ப்புக் குறியீட்டை உள்ளிடவும்",
   "i_did'nt_receive_a_code": "நான் குறியீட்டைப் பெறவில்லை",
   "resend": "மீண்டும் அனுப்பு",
-  "continue": "தொடரவும்"
+  "continue": "தொடரவும்",
+  "verification_failed": "சரிபார்ப்பு தோல்வியடைந்தது",
+  "verification_not_completed": "சரிபார்ப்பு முடிக்கப்படவில்லை",
+  "your_verification_is_not_completed_please_try_again": "உங்கள் சரிபார்ப்பு முடிவடையவில்லை, மீண்டும் முயற்சிக்கவும்.",
+  "try_again": "மீண்டும் முயற்சி செய்"
 }

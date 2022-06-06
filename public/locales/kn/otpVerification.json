@@ -4,5 +4,9 @@
   "please_enter_the_verification_code_we_sent_to_your_phone_number": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಗೆ ನಾವು ಕಳುಹಿಸಿದ ಪರಿಶೀಲನಾ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ",
   "i_did'nt_receive_a_code": "ನಾನು ಕೋಡ್ ಸ್ವೀಕರಿಸಲಿಲ್ಲ",
   "resend": "ಮರುಕಳುಹಿಸಿ",
-  "continue": "ಮುಂದುವರಿಸಿ"
+  "continue": "ಮುಂದುವರಿಸಿ",
+  "verification_failed": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ",
+  "verification_not_completed": "ಪರಿಶೀಲನೆ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ",
+  "your_verification_is_not_completed_please_try_again": "ನಿಮ್ಮ ಪರಿಶೀಲನೆ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "try_again": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು"
 }

@@ -9,7 +9,7 @@ import Button from '@/components/core/Button';
 import FieldInput from '@/components/core/FieldInput';
 import Heading from '@/components/core/Header';
 
-import { mobileNumber } from '@/validations/mobileNumber';
+import { login } from '@/validations/login';
 import { DivMain, StyledText, StyledSeperatorDiv, StyledSeperatorText, StyledInnerDiv } from './index.styles';
 
 interface Values {
@@ -25,24 +25,20 @@ const Login = () => {
   const handleLogin = () => {
     router.push('/otpVerification');
   };
+
   const handleBack = () => {
     router.push('/language');
   };
+
   return (
     <DivMain>
-      <Formik initialValues={initialValue} onSubmit={handleLogin} validationSchema={mobileNumber}>
+      <Formik initialValues={initialValue} onSubmit={handleLogin} validationSchema={login}>
         {({ values, errors }) => {
           return (
             <Form>
               <Heading text={t('get_started')} onClick={handleBack} />
               <StyledInnerDiv>
                 <MobileIcon />
-
-                {/* <FieldInput
-                  placeholder={t('enter_mobile_number')}
-                  name="mobile"
-                  className="my-2 mt-5 rounded border p-2"
-                /> */}
                 <Field
                   as={FieldInput}
                   id="mobileNumber"
