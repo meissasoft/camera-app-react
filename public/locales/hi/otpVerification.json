@@ -4,5 +4,9 @@
   "please_enter_the_verification_code_we_sent_to_your_phone_number": "कृपया हमारे द्वारा आपके फ़ोन नंबर पर भेजा गया सत्यापन कोड दर्ज करें",
   "i_did'nt_receive_a_code": "मुझे कोई कोड नहीं मिला",
   "resend": "पुन: भेजें",
-  "continue": "जारी रखें"
+  "continue": "जारी रखें",
+  "verification_failed": "सत्यापन असफल",
+  "verification_not_completed": "सत्यापन पूरा नहीं हुआ",
+  "your_verification_is_not_completed_please_try_again": "आपका सत्यापन पूरा नहीं हुआ है कृपया पुनः प्रयास करें।",
+  "try_again": "पुनः प्रयास करें"
 }

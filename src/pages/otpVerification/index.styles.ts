@@ -4,25 +4,29 @@ import { COLORS } from '@/constants/colors';
 
 export const DivMain = styled.div<{ isError: boolean }>`
   margin: 20px 0px 0px 0px;
-  -webkit-animation: fadeInUp 1 ease-in-out; /* Chrome, Safari, Opera */
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
   animation: fadeInUp 500ms ease-in-out;
   .heading {
     padding-left: 20px;
     padding-right: 20px;
   }
   .inner {
-    height: 100vh;
+    height: calc(100vh - 100px);
     padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     align-content:  flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin-top:10px;
     background: ${COLORS.WHITE};
     box-shadow: 0px -11px 13px rgba(0, 0, 0, 0.06);
     border-radius: 20px 20px 0px 0px;
+  }
+
+  .relative {
     position: relative;
+    width: 100%;
   }
 
   .title{
@@ -43,12 +47,14 @@ export const DivMain = styled.div<{ isError: boolean }>`
 
   .barIcon{
     cursor:pointer;
+    display: flex;
+    justify-content: center;
   } 
 
   .crossIcon{
     position:absolute;
-    right: 12px;
-    top: 24px;
+    right: 0px;
+    top: 10px;
     cursor: pointer;
   }
 

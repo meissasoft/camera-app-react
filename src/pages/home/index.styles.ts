@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 
 export const BixDiv = styled.div`
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
   align-items: space-between;
   justify-content: space-between;
-  height: calc(100vh - 40px);
   -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
   animation: fadeInUp 500ms ease-in-out;
 `;
